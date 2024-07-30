@@ -1,0 +1,673 @@
+Q: Given a directed graph: G describes a directed graph among node PPNIK, BJYTD, JBWJP, NHMOQ, ICHRB, WXFES, LOSBC, NHRQV, RQCYT, JTHAK, FAETG, and JPBQA.
+Node PPNIK is directed to Node LOSBC.
+Node PPNIK is directed to Node RQCYT.
+Node PPNIK is directed to Node NHRQV.
+Node PPNIK is directed to Node JBWJP.
+Node PPNIK is directed to Node FAETG.
+Node PPNIK is directed to Node BJYTD.
+Node PPNIK is directed to Node JTHAK.
+Node BJYTD is directed to Node JTHAK.
+Node BJYTD is directed to Node FAETG.
+Node BJYTD is directed to Node JBWJP.
+Node BJYTD is directed to Node RQCYT.
+Node BJYTD is directed to Node PPNIK.
+Node BJYTD is directed to Node LOSBC.
+Node BJYTD is directed to Node NHRQV.
+Node BJYTD is directed to Node ICHRB.
+Node JBWJP is directed to Node JTHAK.
+Node JBWJP is directed to Node NHRQV.
+Node JBWJP is directed to Node FAETG.
+Node JBWJP is directed to Node BJYTD.
+Node JBWJP is directed to Node PPNIK.
+Node JBWJP is directed to Node RQCYT.
+Node JBWJP is directed to Node LOSBC.
+Node JBWJP is directed to Node JPBQA.
+Node NHMOQ is directed to Node JTHAK.
+Node ICHRB is directed to Node LOSBC.
+Node ICHRB is directed to Node FAETG.
+Node WXFES is directed to Node JPBQA.
+Node WXFES is directed to Node ICHRB.
+Node LOSBC is directed to Node PPNIK.
+Node LOSBC is directed to Node FAETG.
+Node LOSBC is directed to Node BJYTD.
+Node LOSBC is directed to Node RQCYT.
+Node LOSBC is directed to Node NHRQV.
+Node LOSBC is directed to Node JBWJP.
+Node LOSBC is directed to Node JTHAK.
+Node LOSBC is directed to Node JPBQA.
+Node NHRQV is directed to Node RQCYT.
+Node NHRQV is directed to Node JTHAK.
+Node NHRQV is directed to Node LOSBC.
+Node NHRQV is directed to Node PPNIK.
+Node NHRQV is directed to Node FAETG.
+Node NHRQV is directed to Node JBWJP.
+Node NHRQV is directed to Node BJYTD.
+Node RQCYT is directed to Node NHRQV.
+Node RQCYT is directed to Node LOSBC.
+Node RQCYT is directed to Node JTHAK.
+Node RQCYT is directed to Node PPNIK.
+Node RQCYT is directed to Node BJYTD.
+Node RQCYT is directed to Node FAETG.
+Node RQCYT is directed to Node JBWJP.
+Node JTHAK is directed to Node BJYTD.
+Node JTHAK is directed to Node FAETG.
+Node JTHAK is directed to Node NHRQV.
+Node JTHAK is directed to Node JBWJP.
+Node JTHAK is directed to Node PPNIK.
+Node JTHAK is directed to Node RQCYT.
+Node JTHAK is directed to Node LOSBC.
+Node JTHAK is directed to Node NHMOQ.
+Node FAETG is directed to Node JTHAK.
+Node FAETG is directed to Node BJYTD.
+Node FAETG is directed to Node RQCYT.
+Node FAETG is directed to Node LOSBC.
+Node FAETG is directed to Node NHRQV.
+Node FAETG is directed to Node PPNIK.
+Node FAETG is directed to Node JBWJP.
+Node FAETG is directed to Node WXFES.
+Node FAETG is directed to Node JPBQA.
+Node JPBQA is directed to Node BJYTD.
+Node JPBQA is directed to Node NHRQV.
+ Does a path exist from node WXFES to node NHMOQ? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node WXFES to node NHMOQ and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node WXFES.
+- Set the distance to node WXFES (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node WXFES (smallest distance in the priority queue). From node WXFES, we can reach nodes JPBQA and ICHRB. We update the distances to nodes JPBQA and ICHRB.
+  - Distance to node JPBQA (from node WXFES) is 1, which is better than the previous, update the priority queue.
+  - Distance to node ICHRB (from node WXFES) is 1, which is better than the previous, update the priority queue.
+
+2. Select node ICHRB (next smallest distance in the priority queue). From node ICHRB, we can reach nodes LOSBC and FAETG. We update the distances to nodes LOSBC and FAETG.
+  - Distance to node LOSBC (from node ICHRB) is 2, which is better than the previous, update the priority queue.
+  - Distance to node FAETG (from node ICHRB) is 2, which is better than the previous, update the priority queue.
+
+3. Select node JPBQA (next smallest distance in the priority queue). From node JPBQA, we can reach nodes BJYTD and NHRQV. We update the distances to nodes BJYTD and NHRQV.
+  - Distance to node BJYTD (from node JPBQA) is 2, which is better than the previous, update the priority queue.
+  - Distance to node NHRQV (from node JPBQA) is 2, which is better than the previous, update the priority queue.
+
+4. Select node BJYTD (next smallest distance in the priority queue). From node BJYTD, we can reach nodes JTHAK, FAETG, JBWJP, RQCYT, PPNIK, LOSBC, NHRQV and ICHRB. However, nod and ICHRB has already been selected. We update the distances to nodes JTHAK, FAETG, JBWJP, RQCYT, PPNIK, LOSBC and NHRQV.
+  - Distance to node JTHAK (from node BJYTD) is 3, which is better than the previous, update the priority queue.
+  - Distance to node FAETG (from node BJYTD) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JBWJP (from node BJYTD) is 3, which is better than the previous, update the priority queue.
+  - Distance to node RQCYT (from node BJYTD) is 3, which is better than the previous, update the priority queue.
+  - Distance to node PPNIK (from node BJYTD) is 3, which is better than the previous, update the priority queue.
+  - Distance to node LOSBC (from node BJYTD) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node NHRQV (from node BJYTD) is 3, which is not better than the previous, and will not update the priority queue.
+
+5. Select node LOSBC (next smallest distance in the priority queue). From node LOSBC, we can reach nodes PPNIK, FAETG, BJYTD, RQCYT, NHRQV, JBWJP, JTHAK and JPBQA. However, nodes BJYTD and JPBQA have already been selected. We update the distances to nodes PPNIK, FAETG, RQCYT, NHRQV, JBWJP and JTHAK.
+  - Distance to node PPNIK (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node FAETG (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node RQCYT (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node NHRQV (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JBWJP (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JTHAK (from node LOSBC) is 3, which is not better than the previous, and will not update the priority queue.
+
+6. Select node NHRQV (next smallest distance in the priority queue). From node NHRQV, we can reach nodes RQCYT, JTHAK, LOSBC, PPNIK, FAETG, JBWJP and BJYTD. However, nodes LOSBC and BJYTD have already been selected. We update the distances to nodes RQCYT, JTHAK, PPNIK, FAETG and JBWJP.
+  - Distance to node RQCYT (from node NHRQV) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JTHAK (from node NHRQV) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node PPNIK (from node NHRQV) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node FAETG (from node NHRQV) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JBWJP (from node NHRQV) is 3, which is not better than the previous, and will not update the priority queue.
+
+7. Select node FAETG (next smallest distance in the priority queue). From node FAETG, we can reach nodes JTHAK, BJYTD, RQCYT, LOSBC, NHRQV, PPNIK, JBWJP, WXFES and JPBQA. However, nodes BJYTD, LOSBC, NHRQV, WXFES and JPBQA have already been selected. We update the distances to nodes JTHAK, RQCYT, PPNIK and JBWJP.
+  - Distance to node JTHAK (from node FAETG) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node RQCYT (from node FAETG) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node PPNIK (from node FAETG) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JBWJP (from node FAETG) is 3, which is not better than the previous, and will not update the priority queue.
+
+8. Select node PPNIK (next smallest distance in the priority queue). From node PPNIK, we can reach nodes LOSBC, RQCYT, NHRQV, JBWJP, FAETG, BJYTD and JTHAK. However, nodes LOSBC, NHRQV, FAETG and BJYTD have already been selected. We update the distances to nodes RQCYT, JBWJP and JTHAK.
+  - Distance to node RQCYT (from node PPNIK) is 4, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JBWJP (from node PPNIK) is 4, which is not better than the previous, and will not update the priority queue.
+  - Distance to node JTHAK (from node PPNIK) is 4, which is not better than the previous, and will not update the priority queue.
+
+9. Select node JBWJP (next smallest distance in the priority queue). From node JBWJP, we can reach nodes JTHAK, NHRQV, FAETG, BJYTD, PPNIK, RQCYT, LOSBC and JPBQA. However, nodes NHRQV, FAETG, BJYTD, PPNIK, LOSBC and JPBQA have already been selected. We update the distances to nodes JTHAK and RQCYT.
+  - Distance to node JTHAK (from node JBWJP) is 4, which is not better than the previous, and will not update the priority queue.
+  - Distance to node RQCYT (from node JBWJP) is 4, which is not better than the previous, and will not update the priority queue.
+
+10. Select node RQCYT (next smallest distance in the priority queue). From node RQCYT, we can reach nodes NHRQV, LOSBC, JTHAK, PPNIK, BJYTD, FAETG and JBWJP. However, nodes NHRQV, LOSBC, PPNIK, BJYTD, FAETG and JBWJP have already been selected. We update the distance to nod and JTHAK.
+  - Distance to node JTHAK (from node RQCYT) is 4, which is not better than the previous, and will not update the priority queue.
+
+11. Select node JTHAK (next smallest distance in the priority queue). From node JTHAK, we can reach nodes BJYTD, FAETG, NHRQV, JBWJP, PPNIK, RQCYT, LOSBC and NHMOQ. However, nodes BJYTD, FAETG, NHRQV, JBWJP, PPNIK, RQCYT and LOSBC have already been selected. We update the distance to nod and NHMOQ.
+  - Distance to node NHMOQ (from node JTHAK) is 4, which is better than the previous, update the priority queue.
+
+12. Select node NHMOQ (next smallest distance in the priority queue). From node NHMOQ, we can reach nod and JTHAK. However, nod and JTHAK has already been selected. We have nothing to update.
+
+Conclusion
+A path exists from node WXFES to node NHMOQ.
+Answer: Node WXFES -> Node JPBQA -> Node BJYTD -> Node JTHAK -> Node NHMOQ.
+
+Q: Given a directed graph: G describes a directed graph among node JRSFU, GRRUQ, WIPAZ, OQGTM, IGJHJ, RGQYO, OVSBG, JPWDU, RICBO, NJRXG, DTYBI, JHYBJ, SJOJG, and RAEBD.
+Node JRSFU is directed to Node JHYBJ.
+Node JRSFU is directed to Node RICBO.
+Node JRSFU is directed to Node DTYBI.
+Node JRSFU is directed to Node SJOJG.
+Node JRSFU is directed to Node WIPAZ.
+Node GRRUQ is directed to Node RAEBD.
+Node GRRUQ is directed to Node WIPAZ.
+Node GRRUQ is directed to Node DTYBI.
+Node GRRUQ is directed to Node RGQYO.
+Node GRRUQ is directed to Node JPWDU.
+Node GRRUQ is directed to Node SJOJG.
+Node GRRUQ is directed to Node JRSFU.
+Node GRRUQ is directed to Node JHYBJ.
+Node GRRUQ is directed to Node IGJHJ.
+Node WIPAZ is directed to Node RGQYO.
+Node WIPAZ is directed to Node JHYBJ.
+Node WIPAZ is directed to Node RICBO.
+Node WIPAZ is directed to Node NJRXG.
+Node WIPAZ is directed to Node JRSFU.
+Node WIPAZ is directed to Node GRRUQ.
+Node WIPAZ is directed to Node SJOJG.
+Node WIPAZ is directed to Node OVSBG.
+Node WIPAZ is directed to Node DTYBI.
+Node IGJHJ is directed to Node RGQYO.
+Node IGJHJ is directed to Node JPWDU.
+Node IGJHJ is directed to Node JHYBJ.
+Node IGJHJ is directed to Node OVSBG.
+Node RGQYO is directed to Node JRSFU.
+Node RGQYO is directed to Node DTYBI.
+Node RGQYO is directed to Node GRRUQ.
+Node RGQYO is directed to Node JPWDU.
+Node RGQYO is directed to Node SJOJG.
+Node RGQYO is directed to Node WIPAZ.
+Node RGQYO is directed to Node RICBO.
+Node RGQYO is directed to Node NJRXG.
+Node OVSBG is directed to Node RICBO.
+Node OVSBG is directed to Node JHYBJ.
+Node OVSBG is directed to Node RGQYO.
+Node OVSBG is directed to Node JPWDU.
+Node OVSBG is directed to Node WIPAZ.
+Node OVSBG is directed to Node DTYBI.
+Node OVSBG is directed to Node GRRUQ.
+Node OVSBG is directed to Node SJOJG.
+Node JPWDU is directed to Node DTYBI.
+Node JPWDU is directed to Node RICBO.
+Node JPWDU is directed to Node NJRXG.
+Node RICBO is directed to Node OVSBG.
+Node RICBO is directed to Node IGJHJ.
+Node RICBO is directed to Node DTYBI.
+Node RICBO is directed to Node SJOJG.
+Node RICBO is directed to Node NJRXG.
+Node RICBO is directed to Node WIPAZ.
+Node NJRXG is directed to Node GRRUQ.
+Node NJRXG is directed to Node RGQYO.
+Node NJRXG is directed to Node JPWDU.
+Node NJRXG is directed to Node WIPAZ.
+Node NJRXG is directed to Node JHYBJ.
+Node NJRXG is directed to Node JRSFU.
+Node NJRXG is directed to Node RAEBD.
+Node NJRXG is directed to Node DTYBI.
+Node DTYBI is directed to Node RGQYO.
+Node DTYBI is directed to Node RAEBD.
+Node DTYBI is directed to Node SJOJG.
+Node DTYBI is directed to Node GRRUQ.
+Node DTYBI is directed to Node JPWDU.
+Node DTYBI is directed to Node IGJHJ.
+Node JHYBJ is directed to Node JPWDU.
+Node JHYBJ is directed to Node DTYBI.
+Node JHYBJ is directed to Node SJOJG.
+Node JHYBJ is directed to Node NJRXG.
+Node JHYBJ is directed to Node RGQYO.
+Node JHYBJ is directed to Node IGJHJ.
+Node JHYBJ is directed to Node RAEBD.
+Node SJOJG is directed to Node IGJHJ.
+Node SJOJG is directed to Node WIPAZ.
+Node SJOJG is directed to Node JPWDU.
+Node SJOJG is directed to Node GRRUQ.
+Node SJOJG is directed to Node JHYBJ.
+Node SJOJG is directed to Node RGQYO.
+Node SJOJG is directed to Node NJRXG.
+Node SJOJG is directed to Node RICBO.
+Node SJOJG is directed to Node RAEBD.
+Node RAEBD is directed to Node JPWDU.
+Node RAEBD is directed to Node WIPAZ.
+Node RAEBD is directed to Node RGQYO.
+Node RAEBD is directed to Node JRSFU.
+Node RAEBD is directed to Node IGJHJ.
+Node RAEBD is directed to Node SJOJG.
+Node RAEBD is directed to Node RICBO.
+Node RAEBD is directed to Node DTYBI.
+ Does a path exist from node OQGTM to node OVSBG? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node OQGTM to node OVSBG and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node OQGTM.
+- Set the distance to node OQGTM (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node OQGTM (smallest distance in the priority queue). From node OQGTM, we cannot reach any node.
+
+ConclusionWe have now considered all possible paths from node OQGTM and updated the distances accordingly. Unfortunately, node OVSBG was never reached in our exploration, indicating that there is no path from node OQGTM to node OVSBG in the graph as described.
+Answer: No path.
+
+Q: Given a directed graph: G describes a directed graph among node ZCIKY, YPTQC, QLYWZ, OMRIM, and OELOK.
+Node ZCIKY is directed to Node YPTQC.
+Node ZCIKY is directed to Node OMRIM.
+Node ZCIKY is directed to Node OELOK.
+Node ZCIKY is directed to Node QLYWZ.
+Node YPTQC is directed to Node QLYWZ.
+Node YPTQC is directed to Node ZCIKY.
+Node YPTQC is directed to Node OMRIM.
+Node YPTQC is directed to Node OELOK.
+Node QLYWZ is directed to Node OMRIM.
+Node QLYWZ is directed to Node YPTQC.
+Node QLYWZ is directed to Node ZCIKY.
+Node OMRIM is directed to Node OELOK.
+Node OMRIM is directed to Node YPTQC.
+Node OMRIM is directed to Node QLYWZ.
+Node OMRIM is directed to Node ZCIKY.
+Node OELOK is directed to Node QLYWZ.
+Node OELOK is directed to Node OMRIM.
+Node OELOK is directed to Node YPTQC.
+Node OELOK is directed to Node ZCIKY.
+ Does a path exist from node ZCIKY to node QLYWZ? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node ZCIKY to node QLYWZ and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node ZCIKY.
+- Set the distance to node ZCIKY (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node ZCIKY (smallest distance in the priority queue). From node ZCIKY, we can reach nodes YPTQC, OMRIM, OELOK and QLYWZ. We update the distances to nodes YPTQC, OMRIM, OELOK and QLYWZ.
+  - Distance to node YPTQC (from node ZCIKY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node OMRIM (from node ZCIKY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node OELOK (from node ZCIKY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node QLYWZ (from node ZCIKY) is 1, which is better than the previous, update the priority queue.
+
+2. Select node YPTQC (next smallest distance in the priority queue). From node YPTQC, we can reach nodes QLYWZ, ZCIKY, OMRIM and OELOK. However, nod and ZCIKY has already been selected. We update the distances to nodes QLYWZ, OMRIM and OELOK.
+  - Distance to node QLYWZ (from node YPTQC) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node OMRIM (from node YPTQC) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node OELOK (from node YPTQC) is 2, which is not better than the previous, and will not update the priority queue.
+
+3. Select node QLYWZ (next smallest distance in the priority queue). From node QLYWZ, we can reach nodes OMRIM, YPTQC and ZCIKY. However, nodes YPTQC and ZCIKY have already been selected. We update the distance to nod and OMRIM.
+  - Distance to node OMRIM (from node QLYWZ) is 2, which is not better than the previous, and will not update the priority queue.
+
+4. Select node OMRIM (next smallest distance in the priority queue). From node OMRIM, we can reach nodes OELOK, YPTQC, QLYWZ and ZCIKY. However, nodes YPTQC, QLYWZ and ZCIKY have already been selected. We update the distance to nod and OELOK.
+  - Distance to node OELOK (from node OMRIM) is 2, which is not better than the previous, and will not update the priority queue.
+
+5. Select node OELOK (next smallest distance in the priority queue). From node OELOK, we can reach nodes QLYWZ, OMRIM, YPTQC and ZCIKY. However, nodes QLYWZ, OMRIM, YPTQC and ZCIKY have already been selected. We have nothing to update.
+
+Conclusion
+A path exists from node ZCIKY to node QLYWZ.
+Answer: Node ZCIKY -> Node QLYWZ.
+
+Q: Given a directed graph: G describes a directed graph among node EBKDL, BIBPS, HVOIM, JEKFO, TBJVG, BOKPO, VLEJH, and RFZMC.
+Node EBKDL is directed to Node RFZMC.
+Node EBKDL is directed to Node HVOIM.
+Node BIBPS is directed to Node HVOIM.
+Node BIBPS is directed to Node VLEJH.
+Node BIBPS is directed to Node TBJVG.
+Node HVOIM is directed to Node BIBPS.
+Node JEKFO is directed to Node RFZMC.
+Node JEKFO is directed to Node VLEJH.
+Node JEKFO is directed to Node EBKDL.
+Node TBJVG is directed to Node HVOIM.
+Node BOKPO is directed to Node BIBPS.
+Node BOKPO is directed to Node RFZMC.
+Node BOKPO is directed to Node HVOIM.
+Node BOKPO is directed to Node TBJVG.
+Node VLEJH is directed to Node BOKPO.
+Node VLEJH is directed to Node HVOIM.
+Node VLEJH is directed to Node TBJVG.
+Node RFZMC is directed to Node HVOIM.
+Node RFZMC is directed to Node EBKDL.
+ Does a path exist from node TBJVG to node EBKDL? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node TBJVG to node EBKDL and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node TBJVG.
+- Set the distance to node TBJVG (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node TBJVG (smallest distance in the priority queue). From node TBJVG, we can reach nod and HVOIM. We update the distance to nod and HVOIM.
+  - Distance to node HVOIM (from node TBJVG) is 1, which is better than the previous, update the priority queue.
+
+2. Select node HVOIM (next smallest distance in the priority queue). From node HVOIM, we can reach nod and BIBPS. We update the distance to nod and BIBPS.
+  - Distance to node BIBPS (from node HVOIM) is 2, which is better than the previous, update the priority queue.
+
+3. Select node BIBPS (next smallest distance in the priority queue). From node BIBPS, we can reach nodes HVOIM, VLEJH and TBJVG. However, nodes HVOIM and TBJVG have already been selected. We update the distance to nod and VLEJH.
+  - Distance to node VLEJH (from node BIBPS) is 3, which is better than the previous, update the priority queue.
+
+4. Select node VLEJH (next smallest distance in the priority queue). From node VLEJH, we can reach nodes BOKPO, HVOIM and TBJVG. However, nodes HVOIM and TBJVG have already been selected. We update the distance to nod and BOKPO.
+  - Distance to node BOKPO (from node VLEJH) is 4, which is better than the previous, update the priority queue.
+
+5. Select node BOKPO (next smallest distance in the priority queue). From node BOKPO, we can reach nodes BIBPS, RFZMC, HVOIM and TBJVG. However, nodes BIBPS, HVOIM and TBJVG have already been selected. We update the distance to nod and RFZMC.
+  - Distance to node RFZMC (from node BOKPO) is 5, which is better than the previous, update the priority queue.
+
+6. Select node RFZMC (next smallest distance in the priority queue). From node RFZMC, we can reach nodes HVOIM and EBKDL. However, nod and HVOIM has already been selected. We update the distance to nod and EBKDL.
+  - Distance to node EBKDL (from node RFZMC) is 6, which is better than the previous, update the priority queue.
+
+7. Select node EBKDL (next smallest distance in the priority queue). From node EBKDL, we can reach nodes RFZMC and HVOIM. However, nodes RFZMC and HVOIM have already been selected. We have nothing to update.
+
+Conclusion
+A path exists from node TBJVG to node EBKDL.
+Answer: Node TBJVG -> Node HVOIM -> Node BIBPS -> Node VLEJH -> Node BOKPO -> Node RFZMC -> Node EBKDL.
+
+Q: Given a directed graph: G describes a directed graph among node JXZTY, UNAHL, VPURA, TOCOZ, NPFDB, ZTZAV, YQDYA, XDWSQ, OWUPZ, IWWCD, CPVVP, and EFRYM.
+Node JXZTY is directed to Node UNAHL.
+Node JXZTY is directed to Node EFRYM.
+Node JXZTY is directed to Node TOCOZ.
+Node JXZTY is directed to Node VPURA.
+Node JXZTY is directed to Node CPVVP.
+Node UNAHL is directed to Node EFRYM.
+Node UNAHL is directed to Node JXZTY.
+Node UNAHL is directed to Node VPURA.
+Node UNAHL is directed to Node TOCOZ.
+Node UNAHL is directed to Node CPVVP.
+Node VPURA is directed to Node UNAHL.
+Node VPURA is directed to Node TOCOZ.
+Node VPURA is directed to Node JXZTY.
+Node VPURA is directed to Node CPVVP.
+Node VPURA is directed to Node EFRYM.
+Node TOCOZ is directed to Node UNAHL.
+Node TOCOZ is directed to Node EFRYM.
+Node TOCOZ is directed to Node VPURA.
+Node TOCOZ is directed to Node CPVVP.
+Node TOCOZ is directed to Node JXZTY.
+Node NPFDB is directed to Node XDWSQ.
+Node NPFDB is directed to Node IWWCD.
+Node NPFDB is directed to Node ZTZAV.
+Node NPFDB is directed to Node OWUPZ.
+Node NPFDB is directed to Node YQDYA.
+Node ZTZAV is directed to Node YQDYA.
+Node ZTZAV is directed to Node IWWCD.
+Node ZTZAV is directed to Node NPFDB.
+Node ZTZAV is directed to Node XDWSQ.
+Node ZTZAV is directed to Node OWUPZ.
+Node YQDYA is directed to Node XDWSQ.
+Node YQDYA is directed to Node OWUPZ.
+Node YQDYA is directed to Node ZTZAV.
+Node YQDYA is directed to Node NPFDB.
+Node YQDYA is directed to Node IWWCD.
+Node XDWSQ is directed to Node IWWCD.
+Node XDWSQ is directed to Node OWUPZ.
+Node XDWSQ is directed to Node YQDYA.
+Node XDWSQ is directed to Node NPFDB.
+Node XDWSQ is directed to Node ZTZAV.
+Node OWUPZ is directed to Node ZTZAV.
+Node OWUPZ is directed to Node NPFDB.
+Node OWUPZ is directed to Node IWWCD.
+Node OWUPZ is directed to Node XDWSQ.
+Node OWUPZ is directed to Node YQDYA.
+Node IWWCD is directed to Node OWUPZ.
+Node IWWCD is directed to Node ZTZAV.
+Node IWWCD is directed to Node NPFDB.
+Node IWWCD is directed to Node YQDYA.
+Node IWWCD is directed to Node XDWSQ.
+Node CPVVP is directed to Node EFRYM.
+Node CPVVP is directed to Node TOCOZ.
+Node CPVVP is directed to Node UNAHL.
+Node CPVVP is directed to Node VPURA.
+Node CPVVP is directed to Node JXZTY.
+Node EFRYM is directed to Node VPURA.
+Node EFRYM is directed to Node CPVVP.
+Node EFRYM is directed to Node TOCOZ.
+Node EFRYM is directed to Node UNAHL.
+Node EFRYM is directed to Node JXZTY.
+ Does a path exist from node JXZTY to node IWWCD? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node JXZTY to node IWWCD and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node JXZTY.
+- Set the distance to node JXZTY (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node JXZTY (smallest distance in the priority queue). From node JXZTY, we can reach nodes UNAHL, EFRYM, TOCOZ, VPURA and CPVVP. We update the distances to nodes UNAHL, EFRYM, TOCOZ, VPURA and CPVVP.
+  - Distance to node UNAHL (from node JXZTY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node EFRYM (from node JXZTY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node TOCOZ (from node JXZTY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node VPURA (from node JXZTY) is 1, which is better than the previous, update the priority queue.
+  - Distance to node CPVVP (from node JXZTY) is 1, which is better than the previous, update the priority queue.
+
+2. Select node UNAHL (next smallest distance in the priority queue). From node UNAHL, we can reach nodes EFRYM, JXZTY, VPURA, TOCOZ and CPVVP. However, nod and JXZTY has already been selected. We update the distances to nodes EFRYM, VPURA, TOCOZ and CPVVP.
+  - Distance to node EFRYM (from node UNAHL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node VPURA (from node UNAHL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node TOCOZ (from node UNAHL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node CPVVP (from node UNAHL) is 2, which is not better than the previous, and will not update the priority queue.
+
+3. Select node VPURA (next smallest distance in the priority queue). From node VPURA, we can reach nodes UNAHL, TOCOZ, JXZTY, CPVVP and EFRYM. However, nodes UNAHL and JXZTY have already been selected. We update the distances to nodes TOCOZ, CPVVP and EFRYM.
+  - Distance to node TOCOZ (from node VPURA) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node CPVVP (from node VPURA) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node EFRYM (from node VPURA) is 2, which is not better than the previous, and will not update the priority queue.
+
+4. Select node TOCOZ (next smallest distance in the priority queue). From node TOCOZ, we can reach nodes UNAHL, EFRYM, VPURA, CPVVP and JXZTY. However, nodes UNAHL, VPURA and JXZTY have already been selected. We update the distances to nodes EFRYM and CPVVP.
+  - Distance to node EFRYM (from node TOCOZ) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node CPVVP (from node TOCOZ) is 2, which is not better than the previous, and will not update the priority queue.
+
+5. Select node CPVVP (next smallest distance in the priority queue). From node CPVVP, we can reach nodes EFRYM, TOCOZ, UNAHL, VPURA and JXZTY. However, nodes TOCOZ, UNAHL, VPURA and JXZTY have already been selected. We update the distance to nod and EFRYM.
+  - Distance to node EFRYM (from node CPVVP) is 2, which is not better than the previous, and will not update the priority queue.
+
+6. Select node EFRYM (next smallest distance in the priority queue). From node EFRYM, we can reach nodes VPURA, CPVVP, TOCOZ, UNAHL and JXZTY. However, nodes VPURA, CPVVP, TOCOZ, UNAHL and JXZTY have already been selected. We have nothing to update.
+
+ConclusionWe have now considered all possible paths from node JXZTY and updated the distances accordingly. Unfortunately, node IWWCD was never reached in our exploration, indicating that there is no path from node JXZTY to node IWWCD in the graph as described.
+Answer: No path.
+
+Q: Given a directed graph: G describes a directed graph among node SYKHJ, OIMJU, UVXWN, XIFOC, CRLCT, FTADZ, KNNVV, KMKCP, JTWKC, GBKNW, KLAQI, KAUYU, GXGAS, and HUAFQ.
+Node SYKHJ is directed to Node OIMJU.
+Node OIMJU is directed to Node UVXWN.
+Node UVXWN is directed to Node XIFOC.
+Node XIFOC is directed to Node CRLCT.
+Node CRLCT is directed to Node FTADZ.
+Node FTADZ is directed to Node KNNVV.
+Node KNNVV is directed to Node KMKCP.
+Node KMKCP is directed to Node JTWKC.
+Node JTWKC is directed to Node GBKNW.
+Node GBKNW is directed to Node KLAQI.
+Node KLAQI is directed to Node KAUYU.
+ Does a path exist from node KNNVV to node KAUYU? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node KNNVV to node KAUYU and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node KNNVV.
+- Set the distance to node KNNVV (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node KNNVV (smallest distance in the priority queue). From node KNNVV, we can reach nod and KMKCP. We update the distance to nod and KMKCP.
+  - Distance to node KMKCP (from node KNNVV) is 1, which is better than the previous, update the priority queue.
+
+2. Select node KMKCP (next smallest distance in the priority queue). From node KMKCP, we can reach nod and JTWKC. We update the distance to nod and JTWKC.
+  - Distance to node JTWKC (from node KMKCP) is 2, which is better than the previous, update the priority queue.
+
+3. Select node JTWKC (next smallest distance in the priority queue). From node JTWKC, we can reach nod and GBKNW. We update the distance to nod and GBKNW.
+  - Distance to node GBKNW (from node JTWKC) is 3, which is better than the previous, update the priority queue.
+
+4. Select node GBKNW (next smallest distance in the priority queue). From node GBKNW, we can reach nod and KLAQI. We update the distance to nod and KLAQI.
+  - Distance to node KLAQI (from node GBKNW) is 4, which is better than the previous, update the priority queue.
+
+5. Select node KLAQI (next smallest distance in the priority queue). From node KLAQI, we can reach nod and KAUYU. We update the distance to nod and KAUYU.
+  - Distance to node KAUYU (from node KLAQI) is 5, which is better than the previous, update the priority queue.
+
+6. Select node KAUYU (next smallest distance in the priority queue). From node KAUYU, we cannot reach any node.
+
+Conclusion
+A path exists from node KNNVV to node KAUYU.
+Answer: Node KNNVV -> Node KMKCP -> Node JTWKC -> Node GBKNW -> Node KLAQI -> Node KAUYU.
+
+Q: Given a directed graph: G describes a directed graph among node SVBRH, URBVG, WFTEN, YOTUS, XGHGA, AYAYN, IQQCH, and GADXL.
+Node SVBRH is directed to Node URBVG.
+Node SVBRH is directed to Node AYAYN.
+Node SVBRH is directed to Node WFTEN.
+Node SVBRH is directed to Node XGHGA.
+Node URBVG is directed to Node WFTEN.
+Node URBVG is directed to Node GADXL.
+Node URBVG is directed to Node AYAYN.
+Node URBVG is directed to Node SVBRH.
+Node URBVG is directed to Node IQQCH.
+Node WFTEN is directed to Node YOTUS.
+Node WFTEN is directed to Node GADXL.
+Node WFTEN is directed to Node IQQCH.
+Node YOTUS is directed to Node XGHGA.
+Node YOTUS is directed to Node URBVG.
+Node YOTUS is directed to Node AYAYN.
+Node YOTUS is directed to Node GADXL.
+Node XGHGA is directed to Node AYAYN.
+Node XGHGA is directed to Node URBVG.
+Node XGHGA is directed to Node IQQCH.
+Node XGHGA is directed to Node SVBRH.
+Node XGHGA is directed to Node WFTEN.
+Node AYAYN is directed to Node IQQCH.
+Node AYAYN is directed to Node XGHGA.
+Node AYAYN is directed to Node GADXL.
+Node AYAYN is directed to Node URBVG.
+Node AYAYN is directed to Node WFTEN.
+Node IQQCH is directed to Node GADXL.
+Node IQQCH is directed to Node SVBRH.
+Node IQQCH is directed to Node XGHGA.
+Node IQQCH is directed to Node AYAYN.
+Node IQQCH is directed to Node URBVG.
+Node GADXL is directed to Node YOTUS.
+Node GADXL is directed to Node XGHGA.
+Node GADXL is directed to Node SVBRH.
+Node GADXL is directed to Node IQQCH.
+Node GADXL is directed to Node WFTEN.
+Node GADXL is directed to Node URBVG.
+ Does a path exist from node WFTEN to node XGHGA? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node WFTEN to node XGHGA and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node WFTEN.
+- Set the distance to node WFTEN (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node WFTEN (smallest distance in the priority queue). From node WFTEN, we can reach nodes YOTUS, GADXL and IQQCH. We update the distances to nodes YOTUS, GADXL and IQQCH.
+  - Distance to node YOTUS (from node WFTEN) is 1, which is better than the previous, update the priority queue.
+  - Distance to node GADXL (from node WFTEN) is 1, which is better than the previous, update the priority queue.
+  - Distance to node IQQCH (from node WFTEN) is 1, which is better than the previous, update the priority queue.
+
+2. Select node YOTUS (next smallest distance in the priority queue). From node YOTUS, we can reach nodes XGHGA, URBVG, AYAYN and GADXL. We update the distances to nodes XGHGA, URBVG, AYAYN and GADXL.
+  - Distance to node XGHGA (from node YOTUS) is 2, which is better than the previous, update the priority queue.
+  - Distance to node URBVG (from node YOTUS) is 2, which is better than the previous, update the priority queue.
+  - Distance to node AYAYN (from node YOTUS) is 2, which is better than the previous, update the priority queue.
+  - Distance to node GADXL (from node YOTUS) is 2, which is not better than the previous, and will not update the priority queue.
+
+3. Select node IQQCH (next smallest distance in the priority queue). From node IQQCH, we can reach nodes GADXL, SVBRH, XGHGA, AYAYN and URBVG. We update the distances to nodes GADXL, SVBRH, XGHGA, AYAYN and URBVG.
+  - Distance to node GADXL (from node IQQCH) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node SVBRH (from node IQQCH) is 2, which is better than the previous, update the priority queue.
+  - Distance to node XGHGA (from node IQQCH) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node AYAYN (from node IQQCH) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node URBVG (from node IQQCH) is 2, which is not better than the previous, and will not update the priority queue.
+
+4. Select node GADXL (next smallest distance in the priority queue). From node GADXL, we can reach nodes YOTUS, XGHGA, SVBRH, IQQCH, WFTEN and URBVG. However, nodes YOTUS, IQQCH and WFTEN have already been selected. We update the distances to nodes XGHGA, SVBRH and URBVG.
+  - Distance to node XGHGA (from node GADXL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node SVBRH (from node GADXL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node URBVG (from node GADXL) is 2, which is not better than the previous, and will not update the priority queue.
+
+5. Select node SVBRH (next smallest distance in the priority queue). From node SVBRH, we can reach nodes URBVG, AYAYN, WFTEN and XGHGA. However, nod and WFTEN has already been selected. We update the distances to nodes URBVG, AYAYN and XGHGA.
+  - Distance to node URBVG (from node SVBRH) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node AYAYN (from node SVBRH) is 3, which is not better than the previous, and will not update the priority queue.
+  - Distance to node XGHGA (from node SVBRH) is 3, which is not better than the previous, and will not update the priority queue.
+
+6. Select node URBVG (next smallest distance in the priority queue). From node URBVG, we can reach nodes WFTEN, GADXL, AYAYN, SVBRH and IQQCH. However, nodes WFTEN, GADXL, SVBRH and IQQCH have already been selected. We update the distance to nod and AYAYN.
+  - Distance to node AYAYN (from node URBVG) is 3, which is not better than the previous, and will not update the priority queue.
+
+7. Select node XGHGA (next smallest distance in the priority queue). From node XGHGA, we can reach nodes AYAYN, URBVG, IQQCH, SVBRH and WFTEN. However, nodes URBVG, IQQCH, SVBRH and WFTEN have already been selected. We update the distance to nod and AYAYN.
+  - Distance to node AYAYN (from node XGHGA) is 3, which is not better than the previous, and will not update the priority queue.
+
+8. Select node AYAYN (next smallest distance in the priority queue). From node AYAYN, we can reach nodes IQQCH, XGHGA, GADXL, URBVG and WFTEN. However, nodes IQQCH, XGHGA, GADXL, URBVG and WFTEN have already been selected. We have nothing to update.
+
+Conclusion
+A path exists from node WFTEN to node XGHGA.
+Answer: Node WFTEN -> Node YOTUS -> Node XGHGA.
+
+Q: Given a directed graph: G describes a directed graph among node WWYEZ, XMPBE, AVPQC, QLUQC, SCKIL, DKIMN, IYCUT, YEOCE, UWAHS, EFOOC, OKDQW, XGHGI, and GMWHN.
+Node WWYEZ is directed to Node XMPBE.
+Node XMPBE is directed to Node AVPQC.
+Node AVPQC is directed to Node QLUQC.
+Node QLUQC is directed to Node SCKIL.
+ Does a path exist from node XMPBE to node SCKIL? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node XMPBE to node SCKIL and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node XMPBE.
+- Set the distance to node XMPBE (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node XMPBE (smallest distance in the priority queue). From node XMPBE, we can reach nod and AVPQC. We update the distance to nod and AVPQC.
+  - Distance to node AVPQC (from node XMPBE) is 1, which is better than the previous, update the priority queue.
+
+2. Select node AVPQC (next smallest distance in the priority queue). From node AVPQC, we can reach nod and QLUQC. We update the distance to nod and QLUQC.
+  - Distance to node QLUQC (from node AVPQC) is 2, which is better than the previous, update the priority queue.
+
+3. Select node QLUQC (next smallest distance in the priority queue). From node QLUQC, we can reach nod and SCKIL. We update the distance to nod and SCKIL.
+  - Distance to node SCKIL (from node QLUQC) is 3, which is better than the previous, update the priority queue.
+
+4. Select node SCKIL (next smallest distance in the priority queue). From node SCKIL, we cannot reach any node.
+
+Conclusion
+A path exists from node XMPBE to node SCKIL.
+Answer: Node XMPBE -> Node AVPQC -> Node QLUQC -> Node SCKIL.
+
+Q: Given a directed graph: G describes a directed graph among node PWXTW, LZONL, TQHTQ, WOKBD, AYVDG, and ZXHMI.
+Node PWXTW is directed to Node ZXHMI.
+Node PWXTW is directed to Node TQHTQ.
+Node PWXTW is directed to Node LZONL.
+Node PWXTW is directed to Node AYVDG.
+Node LZONL is directed to Node ZXHMI.
+Node LZONL is directed to Node AYVDG.
+Node LZONL is directed to Node PWXTW.
+Node LZONL is directed to Node TQHTQ.
+Node TQHTQ is directed to Node AYVDG.
+Node TQHTQ is directed to Node PWXTW.
+Node TQHTQ is directed to Node LZONL.
+Node TQHTQ is directed to Node ZXHMI.
+Node WOKBD is directed to Node AYVDG.
+Node AYVDG is directed to Node LZONL.
+Node AYVDG is directed to Node PWXTW.
+Node AYVDG is directed to Node TQHTQ.
+Node AYVDG is directed to Node ZXHMI.
+Node ZXHMI is directed to Node TQHTQ.
+Node ZXHMI is directed to Node AYVDG.
+Node ZXHMI is directed to Node LZONL.
+Node ZXHMI is directed to Node PWXTW.
+ Does a path exist from node ZXHMI to node WOKBD? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Dijkstra's Algorithm, all edges have weight 1.
+A: To determine if there is a path from node ZXHMI to node WOKBD and find the shortest path if it exists, we can use Dijkstra's Algorithm. Let's apply the algorithm step by step:
+
+Initialization
+- Start with node ZXHMI.
+- Set the distance to node ZXHMI (the starting node) to 0 and to all other nodes to infinity.
+- Keep a priority queue to select the node with the smallest tentative distance that hasn't been permanently set yet.
+- Mark all nodes as unvisited.
+
+Step by Step Process
+1. Select node ZXHMI (smallest distance in the priority queue). From node ZXHMI, we can reach nodes TQHTQ, AYVDG, LZONL and PWXTW. We update the distances to nodes TQHTQ, AYVDG, LZONL and PWXTW.
+  - Distance to node TQHTQ (from node ZXHMI) is 1, which is better than the previous, update the priority queue.
+  - Distance to node AYVDG (from node ZXHMI) is 1, which is better than the previous, update the priority queue.
+  - Distance to node LZONL (from node ZXHMI) is 1, which is better than the previous, update the priority queue.
+  - Distance to node PWXTW (from node ZXHMI) is 1, which is better than the previous, update the priority queue.
+
+2. Select node PWXTW (next smallest distance in the priority queue). From node PWXTW, we can reach nodes ZXHMI, TQHTQ, LZONL and AYVDG. However, nod and ZXHMI has already been selected. We update the distances to nodes TQHTQ, LZONL and AYVDG.
+  - Distance to node TQHTQ (from node PWXTW) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node LZONL (from node PWXTW) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node AYVDG (from node PWXTW) is 2, which is not better than the previous, and will not update the priority queue.
+
+3. Select node LZONL (next smallest distance in the priority queue). From node LZONL, we can reach nodes ZXHMI, AYVDG, PWXTW and TQHTQ. However, nodes ZXHMI and PWXTW have already been selected. We update the distances to nodes AYVDG and TQHTQ.
+  - Distance to node AYVDG (from node LZONL) is 2, which is not better than the previous, and will not update the priority queue.
+  - Distance to node TQHTQ (from node LZONL) is 2, which is not better than the previous, and will not update the priority queue.
+
+4. Select node TQHTQ (next smallest distance in the priority queue). From node TQHTQ, we can reach nodes AYVDG, PWXTW, LZONL and ZXHMI. However, nodes PWXTW, LZONL and ZXHMI have already been selected. We update the distance to nod and AYVDG.
+  - Distance to node AYVDG (from node TQHTQ) is 2, which is not better than the previous, and will not update the priority queue.
+
+5. Select node AYVDG (next smallest distance in the priority queue). From node AYVDG, we can reach nodes LZONL, PWXTW, TQHTQ and ZXHMI. However, nodes LZONL, PWXTW, TQHTQ and ZXHMI have already been selected. We have nothing to update.
+
+ConclusionWe have now considered all possible paths from node ZXHMI and updated the distances accordingly. Unfortunately, node WOKBD was never reached in our exploration, indicating that there is no path from node ZXHMI to node WOKBD in the graph as described.
+Answer: No path.
+

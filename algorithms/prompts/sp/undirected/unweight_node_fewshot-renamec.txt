@@ -1,0 +1,118 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among UZLWM, KKWTP, NVCRE, AFGPF, CBIQI, IORTX, SRPXS, PCGDC, OXSSV, WQMWI, GULQD, PFUXI, ZTFWR, and SJWOG.
+In this graph:
+Node NVCRE is connected to nodes UZLWM, KKWTP, AFGPF, IORTX, PCGDC, WQMWI, PFUXI, CBIQI, SJWOG.
+Node KKWTP is connected to nodes UZLWM, NVCRE, SRPXS, CBIQI, GULQD, WQMWI, AFGPF, ZTFWR, OXSSV, PCGDC, PFUXI.
+Node PCGDC is connected to nodes KKWTP, NVCRE, CBIQI, IORTX, SRPXS, OXSSV, GULQD, ZTFWR, WQMWI, PFUXI, SJWOG.
+Node SRPXS is connected to nodes UZLWM, KKWTP, AFGPF, CBIQI, IORTX, PCGDC, ZTFWR, WQMWI, SJWOG, PFUXI.
+Node PFUXI is connected to nodes UZLWM, KKWTP, NVCRE, AFGPF, CBIQI, IORTX, SRPXS, PCGDC, OXSSV, WQMWI, GULQD, ZTFWR, SJWOG.
+Node SJWOG is connected to nodes UZLWM, NVCRE, AFGPF, CBIQI, IORTX, SRPXS, PCGDC, WQMWI, GULQD, PFUXI, ZTFWR.
+Node GULQD is connected to nodes UZLWM, KKWTP, IORTX, PCGDC, OXSSV, WQMWI, PFUXI, SJWOG, ZTFWR.
+Node WQMWI is connected to nodes UZLWM, KKWTP, NVCRE, CBIQI, IORTX, SRPXS, PCGDC, OXSSV, GULQD, SJWOG, ZTFWR, PFUXI.
+Node AFGPF is connected to nodes UZLWM, KKWTP, NVCRE, CBIQI, ZTFWR, PFUXI, SJWOG, OXSSV, SRPXS.
+Node ZTFWR is connected to nodes UZLWM, KKWTP, AFGPF, SRPXS, PCGDC, OXSSV, WQMWI, GULQD, PFUXI, SJWOG.
+Node IORTX is connected to nodes UZLWM, NVCRE, CBIQI, SRPXS, PFUXI, OXSSV, GULQD, PCGDC, WQMWI, SJWOG.
+Node CBIQI is connected to nodes KKWTP, NVCRE, AFGPF, IORTX, SRPXS, PFUXI, SJWOG, OXSSV, PCGDC, WQMWI.
+Node OXSSV is connected to nodes UZLWM, KKWTP, AFGPF, CBIQI, IORTX, PCGDC, WQMWI, PFUXI, GULQD, ZTFWR.
+Node UZLWM is connected to nodes KKWTP, AFGPF, WQMWI, SRPXS, PFUXI, GULQD, SJWOG, ZTFWR, IORTX, OXSSV, NVCRE.
+ The question is: Does a path exist from node OXSSV to node SRPXS? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node OXSSV -> Node IORTX -> Node SRPXS
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among FQWVM, XOJTY, QRJWN, CUTVH, YGDXW, SLHLB, JKHWT, CZVQE, ACGGX, and OLVAA.
+In this graph:
+Node XOJTY is connected to nodes YGDXW.
+Node FQWVM is connected to nodes QRJWN.
+Node JKHWT is connected to nodes ACGGX.
+Node CZVQE is connected to nodes CUTVH, YGDXW.
+Node OLVAA is connected to nodes QRJWN, ACGGX.
+Node YGDXW is connected to nodes XOJTY, CZVQE.
+Node CUTVH is connected to nodes CZVQE, ACGGX.
+Node ACGGX is connected to nodes QRJWN, CUTVH, JKHWT, OLVAA.
+Node QRJWN is connected to nodes FQWVM, ACGGX, OLVAA.
+ The question is: Does a path exist from node SLHLB to node JKHWT? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among UYQJY, LQPGL, FVRIT, ZWAYO, MFJFE, OOBGH, QSEDT, ALXHB, YZAPG, TGUCK, DYGAM, and JOJGA.
+In this graph:
+Node MFJFE is connected to nodes OOBGH, QSEDT, DYGAM.
+Node OOBGH is connected to nodes ZWAYO, MFJFE, TGUCK.
+Node LQPGL is connected to nodes JOJGA, ALXHB, DYGAM, YZAPG.
+Node ZWAYO is connected to nodes TGUCK, OOBGH, QSEDT.
+Node YZAPG is connected to nodes LQPGL, ALXHB, DYGAM, JOJGA.
+Node FVRIT is connected to nodes UYQJY, TGUCK.
+Node QSEDT is connected to nodes ZWAYO, MFJFE.
+Node DYGAM is connected to nodes LQPGL, MFJFE, YZAPG, JOJGA.
+Node ALXHB is connected to nodes LQPGL, YZAPG, JOJGA.
+Node UYQJY is connected to nodes TGUCK, FVRIT.
+Node TGUCK is connected to nodes UYQJY, FVRIT, ZWAYO, OOBGH.
+Node JOJGA is connected to nodes LQPGL, ALXHB, YZAPG, DYGAM.
+ The question is: Does a path exist from node ALXHB to node FVRIT? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node ALXHB -> Node LQPGL -> Node DYGAM -> Node MFJFE -> Node OOBGH -> Node TGUCK -> Node FVRIT
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among VUSRS, BJGIA, FPZEL, IIHZG, HBEGV, and ULISE.
+In this graph:
+Node FPZEL is connected to nodes BJGIA, IIHZG.
+Node HBEGV is connected to nodes IIHZG.
+Node BJGIA is connected to nodes VUSRS, FPZEL.
+Node IIHZG is connected to nodes FPZEL, HBEGV.
+Node VUSRS is connected to nodes BJGIA.
+ The question is: Does a path exist from node BJGIA to node HBEGV? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node BJGIA -> Node FPZEL -> Node IIHZG -> Node HBEGV
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among VRRTZ, TCKUZ, TOTFU, NMTRU, NWHUH, and FSXPS.
+In this graph:
+Node TCKUZ is connected to nodes VRRTZ, TOTFU, NWHUH, NMTRU, FSXPS.
+Node NMTRU is connected to nodes VRRTZ, TCKUZ, TOTFU, NWHUH.
+Node VRRTZ is connected to nodes TCKUZ, NMTRU, NWHUH.
+Node TOTFU is connected to nodes TCKUZ, NMTRU, NWHUH.
+Node FSXPS is connected to nodes TCKUZ, NWHUH.
+Node NWHUH is connected to nodes VRRTZ, TCKUZ, TOTFU, NMTRU, FSXPS.
+ The question is: Does a path exist from node NWHUH to node NMTRU? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node NWHUH -> Node NMTRU
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among MIDMJ, NMJCN, QFELA, VEQYV, QAVKP, KDJIP, GEBYO, VAFOR, SGNAW, BUDVC, ZFTTJ, HAWVU, WCJHK, JDPYE, and QQBBJ.
+In this graph:
+Node WCJHK is connected to nodes QFELA, GEBYO, JDPYE.
+Node VAFOR is connected to nodes MIDMJ, NMJCN, QAVKP, GEBYO, ZFTTJ, SGNAW.
+Node MIDMJ is connected to nodes BUDVC, NMJCN, VAFOR.
+Node BUDVC is connected to nodes MIDMJ, GEBYO, SGNAW, QQBBJ, ZFTTJ.
+Node VEQYV is connected to nodes JDPYE, QQBBJ.
+Node KDJIP is connected to nodes NMJCN, JDPYE.
+Node ZFTTJ is connected to nodes NMJCN, QFELA, VAFOR, BUDVC, HAWVU.
+Node JDPYE is connected to nodes VEQYV, KDJIP, WCJHK, QQBBJ.
+Node QFELA is connected to nodes GEBYO, HAWVU, ZFTTJ, WCJHK.
+Node QAVKP is connected to nodes VAFOR.
+Node HAWVU is connected to nodes NMJCN, QFELA, ZFTTJ, QQBBJ.
+Node GEBYO is connected to nodes NMJCN, QFELA, BUDVC, SGNAW, VAFOR, WCJHK.
+Node NMJCN is connected to nodes MIDMJ, ZFTTJ, GEBYO, VAFOR, KDJIP, HAWVU.
+Node SGNAW is connected to nodes GEBYO, VAFOR, BUDVC.
+Node QQBBJ is connected to nodes VEQYV, BUDVC, HAWVU, JDPYE.
+ The question is: Does a path exist from node QAVKP to node VEQYV? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node QAVKP -> Node VAFOR -> Node NMJCN -> Node KDJIP -> Node JDPYE -> Node VEQYV
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among LMQAT, PWYOU, BZFZF, RCGCC, YWJFH, SOAFM, ALIZC, DMCWH, XHYIH, JCTGZ, and XAIDQ.
+In this graph:
+Node RCGCC is connected to nodes ALIZC, XAIDQ.
+Node DMCWH is connected to nodes XHYIH.
+Node SOAFM is connected to nodes LMQAT, BZFZF, YWJFH, XAIDQ, JCTGZ.
+Node LMQAT is connected to nodes YWJFH, XHYIH, ALIZC, JCTGZ, SOAFM.
+Node BZFZF is connected to nodes PWYOU, JCTGZ, XAIDQ, YWJFH, SOAFM, XHYIH.
+Node YWJFH is connected to nodes LMQAT, PWYOU, BZFZF, XAIDQ, SOAFM, XHYIH.
+Node XAIDQ is connected to nodes PWYOU, BZFZF, RCGCC, YWJFH, SOAFM.
+Node XHYIH is connected to nodes LMQAT, PWYOU, BZFZF, YWJFH, DMCWH.
+Node JCTGZ is connected to nodes LMQAT, PWYOU, BZFZF, SOAFM.
+Node PWYOU is connected to nodes XHYIH, JCTGZ, BZFZF, ALIZC, YWJFH, XAIDQ.
+Node ALIZC is connected to nodes LMQAT, PWYOU, RCGCC.
+ The question is: Does a path exist from node RCGCC to node DMCWH? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node RCGCC -> Node ALIZC -> Node PWYOU -> Node XHYIH -> Node DMCWH
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among NSPAO, RYPWA, RYLBI, HNPTC, FIFPW, ZYHMD, JDTMJ, and MKDFB.
+In this graph:
+Node RYPWA is connected to nodes RYLBI, FIFPW.
+Node FIFPW is connected to nodes RYPWA, ZYHMD.
+Node NSPAO is connected to nodes HNPTC.
+Node HNPTC is connected to nodes NSPAO.
+Node RYLBI is connected to nodes RYPWA.
+Node ZYHMD is connected to nodes FIFPW.
+ The question is: Does a path exist from node HNPTC to node RYLBI? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+

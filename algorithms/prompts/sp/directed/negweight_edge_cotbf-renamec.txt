@@ -1,0 +1,438 @@
+Q: Given a directed graph: G describes a directed graph among node ZQNPT, RGIDJ, ZITMY, BPTNB, TSQIX, GJCIF, GTAHO, LIYXL, LOPHC, ESALQ, and YPRIK.
+Node ZQNPT is directed to Node RGIDJ with weight 5.
+Node RGIDJ is directed to Node ZITMY with weight 5.
+Node RGIDJ is directed to Node BPTNB with weight -3.
+Node ZITMY is directed to Node BPTNB with weight 5.
+Node ZITMY is directed to Node LIYXL with weight -1.
+Node BPTNB is directed to Node TSQIX with weight 8.
+Node TSQIX is directed to Node GJCIF with weight 7.
+Node GJCIF is directed to Node GTAHO with weight 7.
+Node GTAHO is directed to Node LIYXL with weight 6.
+Node GTAHO is directed to Node ZITMY with weight 4.
+Node LIYXL is directed to Node LOPHC with weight 5.
+Node LOPHC is directed to Node ESALQ with weight 9.
+Node LOPHC is directed to Node ZQNPT with weight 6.
+Node ESALQ is directed to Node YPRIK with weight 2.
+Node ESALQ is directed to Node LIYXL with weight -1.
+Node YPRIK is directed to Node ESALQ with weight 7.
+Node YPRIK is directed to Node RGIDJ with weight 8.
+ Does a path exist from node TSQIX to node LIYXL? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node TSQIX to node LIYXL and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node TSQIX in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (11 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to GJCIF via TSQIX: 0 + 7 = 7
+- Update distance to GTAHO via GJCIF: 7 + 7 = 14
+- Update distance to LIYXL via GTAHO: 14 + 6 = 20
+- Update distance to ZITMY via GTAHO: 14 + 4 = 18
+- Update distance to LOPHC via LIYXL: 20 + 5 = 25
+- Update distance to ESALQ via LOPHC: 25 + 9 = 34
+- Update distance to ZQNPT via LOPHC: 25 + 6 = 31
+- Update distance to YPRIK via ESALQ: 34 + 2 = 36
+- Update distance to RGIDJ via YPRIK: 36 + 8 = 44
+
+Iteration 2:
+- Update distance to RGIDJ via ZQNPT: 31 + 5 = 36
+- Update distance to BPTNB via RGIDJ: 36 + -3 = 33
+- Update distance to BPTNB via ZITMY: 18 + 5 = 23
+- Update distance to LIYXL via ZITMY: 18 + -1 = 17
+- Update distance to LOPHC via LIYXL: 17 + 5 = 22
+- Update distance to ESALQ via LOPHC: 22 + 9 = 31
+- Update distance to ZQNPT via LOPHC: 22 + 6 = 28
+- Update distance to YPRIK via ESALQ: 31 + 2 = 33
+
+Iteration 3:
+- Update distance to RGIDJ via ZQNPT: 28 + 5 = 33
+
+Iteration 4:
+- No update in a round, stop early.
+
+Therefore, there is a path from node TSQIX to node LIYXL, and the shortest path is Node TSQIX -> Node GJCIF -> Node GTAHO -> Node ZITMY -> Node LIYXL.
+
+Q: Given a directed graph: G describes a directed graph among node JPUHE, NOGTX, DNLHV, JNBFI, MQDAV, ITSYT, DODWI, WOIUR, QDRDA, XODPT, YYTGE, WNTWJ, ALAAZ, ZCSJE, and SCHNM.
+Node JPUHE is directed to Node WNTWJ with weight 1.
+Node JPUHE is directed to Node WOIUR with weight 9.
+Node NOGTX is directed to Node DODWI with weight 9.
+Node NOGTX is directed to Node YYTGE with weight 3.
+Node NOGTX is directed to Node ITSYT with weight 0.
+Node DNLHV is directed to Node WOIUR with weight -2.
+Node JNBFI is directed to Node ZCSJE with weight 9.
+Node JNBFI is directed to Node YYTGE with weight 2.
+Node JNBFI is directed to Node NOGTX with weight 6.
+Node JNBFI is directed to Node WOIUR with weight 6.
+Node MQDAV is directed to Node WOIUR with weight 9.
+Node MQDAV is directed to Node DODWI with weight 4.
+Node MQDAV is directed to Node ALAAZ with weight 2.
+Node MQDAV is directed to Node SCHNM with weight 1.
+Node MQDAV is directed to Node JPUHE with weight 9.
+Node ITSYT is directed to Node SCHNM with weight 9.
+Node ITSYT is directed to Node JNBFI with weight 1.
+Node DODWI is directed to Node QDRDA with weight 2.
+Node DODWI is directed to Node XODPT with weight 8.
+Node DODWI is directed to Node NOGTX with weight 6.
+Node DODWI is directed to Node DNLHV with weight 2.
+Node WOIUR is directed to Node XODPT with weight 6.
+Node WOIUR is directed to Node ZCSJE with weight 7.
+Node QDRDA is directed to Node ZCSJE with weight 9.
+Node QDRDA is directed to Node MQDAV with weight 1.
+Node QDRDA is directed to Node JNBFI with weight 8.
+Node QDRDA is directed to Node NOGTX with weight 7.
+Node QDRDA is directed to Node DODWI with weight -2.
+Node XODPT is directed to Node SCHNM with weight 3.
+Node XODPT is directed to Node ITSYT with weight -2.
+Node XODPT is directed to Node WNTWJ with weight 1.
+Node XODPT is directed to Node JPUHE with weight 3.
+Node XODPT is directed to Node DODWI with weight 1.
+Node YYTGE is directed to Node ZCSJE with weight 5.
+Node YYTGE is directed to Node WNTWJ with weight 0.
+Node WNTWJ is directed to Node ZCSJE with weight -2.
+Node WNTWJ is directed to Node DNLHV with weight 4.
+Node WNTWJ is directed to Node SCHNM with weight 0.
+Node ALAAZ is directed to Node SCHNM with weight 8.
+Node ALAAZ is directed to Node NOGTX with weight -2.
+Node ALAAZ is directed to Node WOIUR with weight 9.
+Node ALAAZ is directed to Node ZCSJE with weight 1.
+Node ZCSJE is directed to Node SCHNM with weight 4.
+Node ZCSJE is directed to Node DNLHV with weight 0.
+Node ZCSJE is directed to Node DODWI with weight 4.
+Node SCHNM is directed to Node MQDAV with weight 0.
+Node SCHNM is directed to Node WNTWJ with weight 6.
+Node SCHNM is directed to Node WOIUR with weight 0.
+ Does a path exist from node YYTGE to node ITSYT? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node YYTGE to node ITSYT and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node YYTGE in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (15 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to ZCSJE via YYTGE: 0 + 5 = 5
+- Update distance to WNTWJ via YYTGE: 0 + 0 = 0
+- Update distance to ZCSJE via WNTWJ: 0 + -2 = -2
+- Update distance to DNLHV via WNTWJ: 0 + 4 = 4
+- Update distance to SCHNM via WNTWJ: 0 + 0 = 0
+- Update distance to DNLHV via ZCSJE: -2 + 0 = -2
+- Update distance to DODWI via ZCSJE: -2 + 4 = 2
+- Update distance to MQDAV via SCHNM: 0 + 0 = 0
+- Update distance to WOIUR via SCHNM: 0 + 0 = 0
+
+Iteration 2:
+- Update distance to WOIUR via DNLHV: -2 + -2 = -4
+- Update distance to ALAAZ via MQDAV: 0 + 2 = 2
+- Update distance to JPUHE via MQDAV: 0 + 9 = 9
+- Update distance to QDRDA via DODWI: 2 + 2 = 4
+- Update distance to XODPT via DODWI: 2 + 8 = 10
+- Update distance to NOGTX via DODWI: 2 + 6 = 8
+- Update distance to XODPT via WOIUR: -4 + 6 = 2
+- Update distance to JNBFI via QDRDA: 4 + 8 = 12
+- Update distance to ITSYT via XODPT: 2 + -2 = 0
+- Update distance to JPUHE via XODPT: 2 + 3 = 5
+- Update distance to NOGTX via ALAAZ: 2 + -2 = 0
+
+Iteration 3:
+- Update distance to JNBFI via ITSYT: 0 + 1 = 1
+
+Iteration 4:
+- No update in a round, stop early.
+
+Therefore, there is a path from node YYTGE to node ITSYT, and the shortest path is Node YYTGE -> Node WNTWJ -> Node ZCSJE -> Node DNLHV -> Node WOIUR -> Node XODPT -> Node ITSYT.
+
+Q: Given a directed graph: G describes a directed graph among node AEISQ, HQIIL, ZUBRE, ZCPCA, IKRHF, GGFIT, and JPLUY.
+Node AEISQ is directed to Node IKRHF with weight 1.
+Node HQIIL is directed to Node AEISQ with weight 1.
+Node ZCPCA is directed to Node IKRHF with weight -3.
+Node GGFIT is directed to Node AEISQ with weight 9.
+Node GGFIT is directed to Node HQIIL with weight 3.
+Node GGFIT is directed to Node ZCPCA with weight 8.
+ Does a path exist from node ZUBRE to node IKRHF? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node ZUBRE to node IKRHF and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node ZUBRE in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (7 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node ZUBRE and node IKRHF. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node JNLWV, TOJRP, ZXPNL, SFUKG, KCGNR, HYMMT, RDIAL, PJOIO, and EBGCV.
+Node JNLWV is directed to Node KCGNR with weight 5.
+Node JNLWV is directed to Node HYMMT with weight 8.
+Node JNLWV is directed to Node TOJRP with weight -2.
+Node TOJRP is directed to Node EBGCV with weight 6.
+Node ZXPNL is directed to Node TOJRP with weight 3.
+Node ZXPNL is directed to Node JNLWV with weight 0.
+Node ZXPNL is directed to Node HYMMT with weight -2.
+Node ZXPNL is directed to Node SFUKG with weight -1.
+Node ZXPNL is directed to Node PJOIO with weight 8.
+Node ZXPNL is directed to Node EBGCV with weight 4.
+Node SFUKG is directed to Node JNLWV with weight -3.
+Node SFUKG is directed to Node EBGCV with weight 9.
+Node KCGNR is directed to Node JNLWV with weight 8.
+Node KCGNR is directed to Node HYMMT with weight 7.
+Node KCGNR is directed to Node ZXPNL with weight 7.
+Node HYMMT is directed to Node RDIAL with weight 6.
+Node HYMMT is directed to Node JNLWV with weight 6.
+Node RDIAL is directed to Node ZXPNL with weight 2.
+Node RDIAL is directed to Node SFUKG with weight 5.
+Node EBGCV is directed to Node SFUKG with weight 1.
+Node EBGCV is directed to Node ZXPNL with weight 4.
+Node EBGCV is directed to Node TOJRP with weight 0.
+Node EBGCV is directed to Node KCGNR with weight 4.
+Node EBGCV is directed to Node HYMMT with weight 1.
+ Does a path exist from node PJOIO to node HYMMT? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node PJOIO to node HYMMT and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node PJOIO in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (9 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node PJOIO and node HYMMT. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node WQTOZ, DWWED, DRRXS, TIWGD, and RDKAV.
+Node WQTOZ is directed to Node TIWGD with weight 9.
+Node WQTOZ is directed to Node RDKAV with weight -2.
+Node WQTOZ is directed to Node DRRXS with weight 3.
+Node DWWED is directed to Node TIWGD with weight 9.
+Node DWWED is directed to Node RDKAV with weight 8.
+Node DWWED is directed to Node WQTOZ with weight 8.
+Node DRRXS is directed to Node TIWGD with weight 9.
+Node DRRXS is directed to Node DWWED with weight 3.
+Node DRRXS is directed to Node RDKAV with weight 3.
+Node TIWGD is directed to Node DRRXS with weight 3.
+Node TIWGD is directed to Node WQTOZ with weight 7.
+Node TIWGD is directed to Node RDKAV with weight 5.
+Node TIWGD is directed to Node DWWED with weight 2.
+Node RDKAV is directed to Node DWWED with weight -1.
+Node RDKAV is directed to Node DRRXS with weight 3.
+Node RDKAV is directed to Node WQTOZ with weight 3.
+Node RDKAV is directed to Node TIWGD with weight 2.
+ Does a path exist from node DWWED to node RDKAV? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node DWWED to node RDKAV and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node DWWED in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (5 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to TIWGD via DWWED: 0 + 9 = 9
+- Update distance to RDKAV via DWWED: 0 + 8 = 8
+- Update distance to WQTOZ via DWWED: 0 + 8 = 8
+- Update distance to DRRXS via TIWGD: 9 + 3 = 12
+- Update distance to DRRXS via RDKAV: 8 + 3 = 11
+
+Iteration 2:
+- Update distance to RDKAV via WQTOZ: 8 + -2 = 6
+- Update distance to DRRXS via RDKAV: 6 + 3 = 9
+- Update distance to TIWGD via RDKAV: 6 + 2 = 8
+
+Iteration 3:
+- No update in a round, stop early.
+
+Therefore, there is a path from node DWWED to node RDKAV, and the shortest path is Node DWWED -> Node WQTOZ -> Node RDKAV.
+
+Q: Given a directed graph: G describes a directed graph among node HEKBS, TEXDI, VVQMN, TPQSK, XPNFJ, BOUUW, and SZHIB.
+Node HEKBS is directed to Node TPQSK with weight -1.
+Node TEXDI is directed to Node XPNFJ with weight 6.
+Node VVQMN is directed to Node HEKBS with weight 4.
+Node TPQSK is directed to Node HEKBS with weight 4.
+Node TPQSK is directed to Node BOUUW with weight -3.
+Node XPNFJ is directed to Node SZHIB with weight 8.
+Node XPNFJ is directed to Node BOUUW with weight 1.
+Node BOUUW is directed to Node TEXDI with weight -1.
+ Does a path exist from node VVQMN to node SZHIB? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node VVQMN to node SZHIB and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node VVQMN in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (7 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to HEKBS via VVQMN: 0 + 4 = 4
+
+Iteration 2:
+- Update distance to TPQSK via HEKBS: 4 + -1 = 3
+- Update distance to BOUUW via TPQSK: 3 + -3 = 0
+- Update distance to TEXDI via BOUUW: 0 + -1 = -1
+
+Iteration 3:
+- Update distance to XPNFJ via TEXDI: -1 + 6 = 5
+- Update distance to SZHIB via XPNFJ: 5 + 8 = 13
+
+Iteration 4:
+- No update in a round, stop early.
+
+Therefore, there is a path from node VVQMN to node SZHIB, and the shortest path is Node VVQMN -> Node HEKBS -> Node TPQSK -> Node BOUUW -> Node TEXDI -> Node XPNFJ -> Node SZHIB.
+
+Q: Given a directed graph: G describes a directed graph among node DGFOK, JBMXO, YHIYH, LGNXS, EWCHQ, DVWSP, VWOOV, LLYOJ, BJYCK, BCZBW, and SCCZC.
+Node JBMXO is directed to Node VWOOV with weight 0.
+Node JBMXO is directed to Node BCZBW with weight 6.
+Node JBMXO is directed to Node DVWSP with weight 3.
+Node YHIYH is directed to Node LLYOJ with weight 0.
+Node YHIYH is directed to Node BJYCK with weight -1.
+Node EWCHQ is directed to Node BJYCK with weight 3.
+Node EWCHQ is directed to Node SCCZC with weight 3.
+Node DVWSP is directed to Node BCZBW with weight 7.
+Node DVWSP is directed to Node JBMXO with weight 5.
+Node VWOOV is directed to Node JBMXO with weight 5.
+Node VWOOV is directed to Node DVWSP with weight -1.
+Node VWOOV is directed to Node BCZBW with weight 7.
+Node LLYOJ is directed to Node LGNXS with weight 3.
+Node BJYCK is directed to Node DGFOK with weight 3.
+Node BJYCK is directed to Node SCCZC with weight -1.
+Node BJYCK is directed to Node LGNXS with weight 0.
+Node BCZBW is directed to Node JBMXO with weight -1.
+Node BCZBW is directed to Node VWOOV with weight 3.
+Node BCZBW is directed to Node DVWSP with weight 5.
+Node SCCZC is directed to Node EWCHQ with weight 2.
+Node SCCZC is directed to Node YHIYH with weight 5.
+Node SCCZC is directed to Node LGNXS with weight 4.
+Node SCCZC is directed to Node LLYOJ with weight -3.
+ Does a path exist from node VWOOV to node EWCHQ? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node VWOOV to node EWCHQ and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node VWOOV in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (11 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to JBMXO via VWOOV: 0 + 5 = 5
+- Update distance to DVWSP via VWOOV: 0 + -1 = -1
+- Update distance to BCZBW via VWOOV: 0 + 7 = 7
+
+Iteration 2:
+- Update distance to BCZBW via DVWSP: -1 + 7 = 6
+- Update distance to JBMXO via DVWSP: -1 + 5 = 4
+
+Iteration 3:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node VWOOV and node EWCHQ. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node COTFB, ULEIT, WZREP, MFTOM, QUXJA, UTVRG, and YLJEL.
+Node ULEIT is directed to Node YLJEL with weight 8.
+Node ULEIT is directed to Node UTVRG with weight 7.
+Node WZREP is directed to Node YLJEL with weight 5.
+Node WZREP is directed to Node QUXJA with weight 1.
+Node MFTOM is directed to Node ULEIT with weight -2.
+Node QUXJA is directed to Node WZREP with weight 2.
+Node QUXJA is directed to Node MFTOM with weight 9.
+Node UTVRG is directed to Node WZREP with weight 8.
+Node UTVRG is directed to Node QUXJA with weight -2.
+Node UTVRG is directed to Node COTFB with weight -2.
+Node UTVRG is directed to Node ULEIT with weight 7.
+Node YLJEL is directed to Node WZREP with weight 6.
+Node YLJEL is directed to Node MFTOM with weight 2.
+Node YLJEL is directed to Node QUXJA with weight 7.
+ Does a path exist from node WZREP to node COTFB? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node WZREP to node COTFB and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node WZREP in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (7 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to YLJEL via WZREP: 0 + 5 = 5
+- Update distance to QUXJA via WZREP: 0 + 1 = 1
+- Update distance to MFTOM via QUXJA: 1 + 9 = 10
+- Update distance to MFTOM via YLJEL: 5 + 2 = 7
+
+Iteration 2:
+- Update distance to ULEIT via MFTOM: 7 + -2 = 5
+
+Iteration 3:
+- Update distance to UTVRG via ULEIT: 5 + 7 = 12
+- Update distance to COTFB via UTVRG: 12 + -2 = 10
+
+Iteration 4:
+- No update in a round, stop early.
+
+Therefore, there is a path from node WZREP to node COTFB, and the shortest path is Node WZREP -> Node YLJEL -> Node MFTOM -> Node ULEIT -> Node UTVRG -> Node COTFB.
+
+Q: Given a directed graph: G describes a directed graph among node XOTRK, ZDJIJ, TYXOK, LWVHU, VRPLE, and CNNPD.
+Node XOTRK is directed to Node TYXOK with weight 8.
+Node XOTRK is directed to Node ZDJIJ with weight 9.
+Node ZDJIJ is directed to Node XOTRK with weight 7.
+Node ZDJIJ is directed to Node LWVHU with weight 8.
+Node ZDJIJ is directed to Node TYXOK with weight 1.
+Node ZDJIJ is directed to Node CNNPD with weight 4.
+Node TYXOK is directed to Node VRPLE with weight 2.
+Node TYXOK is directed to Node CNNPD with weight 6.
+Node TYXOK is directed to Node ZDJIJ with weight 0.
+Node LWVHU is directed to Node XOTRK with weight -1.
+Node LWVHU is directed to Node TYXOK with weight -1.
+Node LWVHU is directed to Node ZDJIJ with weight -3.
+Node LWVHU is directed to Node VRPLE with weight 4.
+Node VRPLE is directed to Node ZDJIJ with weight 6.
+Node VRPLE is directed to Node LWVHU with weight 8.
+Node VRPLE is directed to Node XOTRK with weight 7.
+Node CNNPD is directed to Node TYXOK with weight 6.
+Node CNNPD is directed to Node LWVHU with weight 4.
+Node CNNPD is directed to Node XOTRK with weight 6.
+ Does a path exist from node TYXOK to node XOTRK? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node TYXOK to node XOTRK and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node TYXOK in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (6 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to VRPLE via TYXOK: 0 + 2 = 2
+- Update distance to CNNPD via TYXOK: 0 + 6 = 6
+- Update distance to ZDJIJ via TYXOK: 0 + 0 = 0
+- Update distance to LWVHU via VRPLE: 2 + 8 = 10
+- Update distance to XOTRK via VRPLE: 2 + 7 = 9
+
+Iteration 2:
+- Update distance to XOTRK via ZDJIJ: 0 + 7 = 7
+- Update distance to LWVHU via ZDJIJ: 0 + 8 = 8
+- Update distance to CNNPD via ZDJIJ: 0 + 4 = 4
+
+Iteration 3:
+- No update in a round, stop early.
+
+Therefore, there is a path from node TYXOK to node XOTRK, and the shortest path is Node TYXOK -> Node ZDJIJ -> Node XOTRK.
+

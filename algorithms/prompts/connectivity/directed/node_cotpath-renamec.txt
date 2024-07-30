@@ -1,0 +1,73 @@
+Q: Given a directed graph: G describes a directed graph among IFCQR, UFTZV, AHXJZ, BBAZG, VLUBN, NLHUY, and MXMYT.
+In this graph:
+Node IFCQR is directed to nodes BBAZG.
+Node UFTZV is directed to nodes NLHUY, BBAZG.
+Node AHXJZ is directed to nodes NLHUY, VLUBN, IFCQR, MXMYT.
+Node BBAZG is directed to nodes UFTZV, IFCQR.
+Node VLUBN is directed to nodes BBAZG, NLHUY.
+Node NLHUY is directed to nodes AHXJZ, VLUBN.
+Node MXMYT is directed to nodes BBAZG, IFCQR, NLHUY.
+ Is there a directed path from node IFCQR to node MXMYT  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Exist path: IFCQR -> BBAZG -> UFTZV -> VLUBN -> AHXJZ -> MXMYT.
+
+Q: Given a directed graph: G describes a directed graph among HQCIA, DEQLQ, MAMBF, VGBNC, and IRLLW.
+In this graph:
+Node HQCIA is directed to nodes MAMBF, IRLLW.
+Node DEQLQ is directed to nodes MAMBF, VGBNC.
+Node MAMBF is directed to nodes HQCIA.
+Node VGBNC is directed to nodes HQCIA, DEQLQ, IRLLW.
+Node IRLLW is directed to nodes DEQLQ.
+ Is there a directed path from node MAMBF to node VGBNC  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Exist path: MAMBF -> HQCIA -> IRLLW -> VGBNC.
+
+Q: Given a directed graph: G describes a directed graph among FBNXF, CPLEQ, DZIUC, FAXQX, HYLHN, and QJIMG.
+In this graph:
+Node FBNXF is directed to nodes CPLEQ, FAXQX.
+Node CPLEQ is directed to nodes DZIUC, FAXQX, QJIMG.
+Node DZIUC is directed to nodes FAXQX, HYLHN, CPLEQ.
+Node FAXQX is directed to nodes HYLHN.
+Node HYLHN is directed to nodes QJIMG, FAXQX, FBNXF.
+Node QJIMG is directed to nodes DZIUC, FBNXF, HYLHN.
+ Is there a directed path from node FAXQX to node DZIUC  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Exist path: FAXQX -> HYLHN -> QJIMG -> DZIUC.
+
+Q: Given a directed graph: G describes a directed graph among PMSAT, JFVQL, ZBYTF, RGOTB, CLCRW, KXJTA, TOJYO, RNPGW, and TGLGD.
+In this graph:
+Node PMSAT is directed to nodes JFVQL.
+Node JFVQL is directed to nodes ZBYTF.
+Node ZBYTF is directed to nodes RGOTB.
+ Is there a directed path from node PMSAT to node ZBYTF  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Exist path: PMSAT -> JFVQL -> ZBYTF.
+
+Q: Given a directed graph: G describes a directed graph among SDHGY, UEXZH, KXMQH, MYTZM, and FXDJT.
+In this graph:
+Node SDHGY is directed to nodes UEXZH.
+Node UEXZH is directed to nodes KXMQH, MYTZM, FXDJT.
+Node KXMQH is directed to nodes MYTZM, UEXZH, SDHGY.
+Node MYTZM is directed to nodes FXDJT, KXMQH, UEXZH, SDHGY.
+Node FXDJT is directed to nodes UEXZH, MYTZM, SDHGY, KXMQH.
+ Is there a directed path from node MYTZM to node UEXZH  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Exist path: MYTZM -UEXZH. 
+
+Q: Given a directed graph: G describes a directed graph among SBNPS, AGOPI, UZFBQ, PKCHX, LBNET, LMNJV, IOFVJ, VLEOY, HOTMB, and SAHEG.
+In this graph:
+Node SBNPS is directed to nodes AGOPI.
+Node AGOPI is directed to nodes UZFBQ.
+Node UZFBQ is directed to nodes PKCHX.
+Node PKCHX is directed to nodes LBNET.
+Node LBNET is directed to nodes LMNJV.
+Node LMNJV is directed to nodes IOFVJ.
+Node IOFVJ is directed to nodes VLEOY.
+ Is there a directed path from node IOFVJ to node UZFBQ  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: There is no directed path from node IOFVJ to UZFBQ. No path.
+
+Q: Given a directed graph: G describes a directed graph among USUMN, ETHDM, LXBQT, OFCYT, MYGVF, CDRJY, and UFBME.
+In this graph:
+Node ETHDM is directed to nodes CDRJY, LXBQT, OFCYT.
+Node LXBQT is directed to nodes MYGVF, ETHDM, CDRJY, UFBME, OFCYT.
+Node OFCYT is directed to nodes UFBME, MYGVF, ETHDM, CDRJY.
+Node MYGVF is directed to nodes ETHDM, UFBME.
+Node CDRJY is directed to nodes ETHDM, MYGVF, UFBME, OFCYT.
+Node UFBME is directed to nodes OFCYT, LXBQT.
+ Is there a directed path from node USUMN to node UFBME  If the path exist, give "Exist path" the path in the form of "Node #1 -> Node #2". Otherwise, give "No path"
+A: Node USUMN is an isolated node. There is no path from USUMN to UFBME. No path.

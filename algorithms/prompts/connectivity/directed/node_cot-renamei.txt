@@ -1,0 +1,72 @@
+Q: Given a directed graph: G describes a directed graph among 56931, 42274, 59444, 92351, 90294, 65398, and 8253.
+In this graph:
+Node 42274 is directed to nodes 65398, 59444, 92351.
+Node 59444 is directed to nodes 90294, 42274, 65398, 8253, 92351.
+Node 92351 is directed to nodes 8253, 90294, 42274, 65398.
+Node 90294 is directed to nodes 42274, 8253.
+Node 65398 is directed to nodes 42274, 90294, 8253, 92351.
+Node 8253 is directed to nodes 92351, 59444.
+ Is there a directed path from node 56931 to node 8253 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: Node 56931 is an isolated node. There is no path from node 56931 to 8253. The answer is No.
+
+Q: Given a directed graph: G describes a directed graph among 66659, 93275, 10351, 84105, 82676, 78216, 92165, and 13876.
+In this graph:
+Node 66659 is directed to nodes 93275, 78216.
+Node 93275 is directed to nodes 84105, 66659.
+Node 10351 is directed to nodes 13876, 93275, 92165, 78216, 84105, 82676.
+Node 82676 is directed to nodes 93275, 13876, 66659, 84105.
+Node 78216 is directed to nodes 10351, 66659, 13876, 84105, 82676.
+Node 92165 is directed to nodes 10351, 93275, 82676, 13876.
+Node 13876 is directed to nodes 92165, 78216, 84105.
+ Is there a directed path from node 84105 to node 78216 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: There is no directed path from 84105 to 78216. The answer is No.
+
+Q: Given a directed graph: G describes a directed graph among 84545, 96421, 61256, 94589, and 81758.
+In this graph:
+Node 84545 is directed to nodes 96421, 94589.
+Node 96421 is directed to nodes 61256, 84545, 81758.
+Node 61256 is directed to nodes 94589.
+Node 94589 is directed to nodes 81758, 84545, 96421.
+ Is there a directed path from node 84545 to node 94589 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: A possible path is 84545 -> 94589. The answer is Yes.
+
+Q: Given a directed graph: G describes a directed graph among 55036, 62416, 63288, 22344, 70874, 8678, 70363, 27068, and 5241.
+In this graph:
+Node 55036 is directed to nodes 62416.
+Node 62416 is directed to nodes 63288.
+Node 63288 is directed to nodes 22344.
+ Is there a directed path from node 55036 to node 63288 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: A possible path is 55036 -> 62416 ->63228. The answer is Yes.
+
+Q: Given a directed graph: G describes a directed graph among 88143, 3079, 68562, 46804, 77786, and 90461.
+In this graph:
+Node 88143 is directed to nodes 3079, 46804.
+Node 3079 is directed to nodes 68562, 46804, 90461.
+Node 68562 is directed to nodes 46804, 77786, 3079.
+Node 46804 is directed to nodes 77786.
+Node 77786 is directed to nodes 90461, 46804, 88143.
+Node 90461 is directed to nodes 68562, 88143, 77786.
+ Is there a directed path from node 46804 to node 68562 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: A possible path is 46804 -> 77786 -> 90461 -> 3079. The answer is Yes.
+
+Q: Given a directed graph: G describes a directed graph among 38211, 36330, 97173, 62189, and 89084.
+In this graph:
+Node 38211 is directed to nodes 97173, 89084.
+Node 36330 is directed to nodes 97173, 62189.
+Node 97173 is directed to nodes 38211.
+Node 62189 is directed to nodes 38211, 36330, 89084.
+Node 89084 is directed to nodes 36330.
+ Is there a directed path from node 97173 to node 62189 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: A possible path is 97173 -> 38211 -> 89084 -> 36330 -> 62198 The answer is Yes.
+
+Q: Given a directed graph: G describes a directed graph among 45099, 12197, 49942, 12868, 12526, 52013, and 32799.
+In this graph:
+Node 45099 is directed to nodes 12868.
+Node 12197 is directed to nodes 52013, 12868.
+Node 49942 is directed to nodes 52013, 12526, 45099, 32799.
+Node 12868 is directed to nodes 12197, 45099.
+Node 12526 is directed to nodes 12868, 52013.
+Node 52013 is directed to nodes 49942, 12526.
+Node 32799 is directed to nodes 12868, 45099, 52013.
+ Is there a directed path from node 45099 to node 32799 Choose from the following answers ["No","Yes"] in the form of "The answer is No"  or  "The answer is Yes".
+A: A possible path is 45099 -> 12868 -> 12197 -> 52013 -> 49942 -> 32799. The answer is Yes.

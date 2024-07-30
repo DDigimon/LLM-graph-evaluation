@@ -1,0 +1,138 @@
+Q: Given a directed graph: G describes a directed graph among RMDZG, MSMUV, GHVPF, VFFAS, SWWEC, WUKNR, APGTT, VPBGA, OJSWE, HKTQY, and SATQP.
+In this graph:
+Node RMDZG is directed to nodes MSMUV.
+Node MSMUV is directed to nodes GHVPF.
+Node GHVPF is directed to nodes VFFAS, APGTT.
+Node VFFAS is directed to nodes SWWEC.
+Node SWWEC is directed to nodes WUKNR.
+Node WUKNR is directed to nodes APGTT.
+Node APGTT is directed to nodes VPBGA, RMDZG, WUKNR.
+Node VPBGA is directed to nodes OJSWE, WUKNR.
+Node OJSWE is directed to nodes HKTQY, APGTT.
+Node HKTQY is directed to nodes SATQP, SWWEC.
+Node SATQP is directed to nodes GHVPF.
+ Does a path exist from node WUKNR to node VFFAS? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node WUKNR -> Node APGTT -> Node RMDZG -> Node MSMUV -> Node GHVPF -> Node VFFAS
+
+Q: Given a directed graph: G describes a directed graph among MSPKF, AHXFS, JJPAC, TMHBB, LITXZ, FJUUB, CNWKH, OUTMV, and BYCUS.
+In this graph:
+Node MSPKF is directed to nodes AHXFS, JJPAC, CNWKH.
+Node AHXFS is directed to nodes JJPAC, CNWKH, OUTMV.
+Node JJPAC is directed to nodes OUTMV, LITXZ, BYCUS, CNWKH, TMHBB, MSPKF.
+Node TMHBB is directed to nodes LITXZ, CNWKH, BYCUS, JJPAC, OUTMV.
+Node LITXZ is directed to nodes BYCUS, CNWKH, TMHBB, JJPAC, OUTMV, FJUUB.
+Node CNWKH is directed to nodes OUTMV, BYCUS, LITXZ, TMHBB, JJPAC, MSPKF.
+Node OUTMV is directed to nodes CNWKH, LITXZ, BYCUS, TMHBB, JJPAC, FJUUB, AHXFS.
+Node BYCUS is directed to nodes LITXZ, CNWKH, JJPAC, OUTMV, TMHBB.
+ Does a path exist from node FJUUB to node OUTMV? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Given a directed graph: G describes a directed graph among ZKJAM, MIRUE, DSIDO, QIDHV, HTEYW, FGAFR, SJVYR, AHRRR, DLSJQ, DVDXU, OPAPQ, and KLBRL.
+In this graph:
+Node ZKJAM is directed to nodes MIRUE.
+Node MIRUE is directed to nodes DSIDO.
+Node DSIDO is directed to nodes QIDHV.
+Node QIDHV is directed to nodes HTEYW, DLSJQ.
+Node HTEYW is directed to nodes FGAFR, SJVYR.
+Node FGAFR is directed to nodes SJVYR, MIRUE.
+Node SJVYR is directed to nodes AHRRR, DSIDO.
+Node AHRRR is directed to nodes DLSJQ, HTEYW, ZKJAM.
+Node DLSJQ is directed to nodes DVDXU, DSIDO.
+Node DVDXU is directed to nodes OPAPQ, KLBRL.
+Node OPAPQ is directed to nodes KLBRL, DSIDO.
+ Does a path exist from node QIDHV to node KLBRL? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node QIDHV -> Node DLSJQ -> Node DVDXU -> Node KLBRL
+
+Q: Given a directed graph: G describes a directed graph among JVOSD, XVXVB, NPZSR, BUHXC, CAPNH, MGLMC, DECXN, NZXFB, and GMSQF.
+In this graph:
+Node JVOSD is directed to nodes XVXVB, GMSQF, BUHXC, DECXN, NPZSR, MGLMC, CAPNH.
+Node XVXVB is directed to nodes NPZSR, DECXN, CAPNH, NZXFB, BUHXC, JVOSD, GMSQF, MGLMC.
+Node NPZSR is directed to nodes BUHXC, DECXN, GMSQF, NZXFB, XVXVB, MGLMC, CAPNH.
+Node BUHXC is directed to nodes CAPNH, JVOSD, XVXVB, MGLMC, DECXN, GMSQF, NZXFB, NPZSR.
+Node CAPNH is directed to nodes MGLMC, BUHXC, NZXFB, XVXVB, GMSQF, DECXN, NPZSR, JVOSD.
+Node MGLMC is directed to nodes DECXN, GMSQF, NZXFB, NPZSR, XVXVB, JVOSD, BUHXC, CAPNH.
+Node DECXN is directed to nodes NZXFB, CAPNH, MGLMC, GMSQF, XVXVB, NPZSR, JVOSD.
+Node NZXFB is directed to nodes GMSQF, DECXN, BUHXC, JVOSD, NPZSR, CAPNH, XVXVB.
+Node GMSQF is directed to nodes NPZSR, XVXVB, NZXFB, CAPNH, BUHXC, JVOSD.
+ Does a path exist from node GMSQF to node DECXN? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node GMSQF -> Node NPZSR -> Node DECXN
+
+Q: Given a directed graph: G describes a directed graph among UWPJK, JYLAA, MMNSZ, TRPEE, XBPOI, QOMPT, CHOGS, GODNO, VRXLA, RWTFX, ESITS, EYDBL, ESKSQ, and TAFOW.
+In this graph:
+Node UWPJK is directed to nodes ESKSQ, QOMPT, JYLAA, CHOGS, TRPEE, RWTFX, TAFOW, VRXLA.
+Node JYLAA is directed to nodes RWTFX, TRPEE, TAFOW, CHOGS, UWPJK, ESKSQ, VRXLA, QOMPT, EYDBL, MMNSZ.
+Node MMNSZ is directed to nodes VRXLA, XBPOI, RWTFX, TAFOW.
+Node TRPEE is directed to nodes JYLAA, ESKSQ, VRXLA, QOMPT, CHOGS, RWTFX, TAFOW, UWPJK, EYDBL, ESITS.
+Node XBPOI is directed to nodes RWTFX, EYDBL, TRPEE.
+Node QOMPT is directed to nodes RWTFX, VRXLA, CHOGS, JYLAA, TAFOW, ESKSQ, UWPJK, TRPEE.
+Node CHOGS is directed to nodes TRPEE, ESKSQ, JYLAA, QOMPT, RWTFX, UWPJK, TAFOW, VRXLA, GODNO.
+Node GODNO is directed to nodes TRPEE, VRXLA.
+Node VRXLA is directed to nodes CHOGS, UWPJK, QOMPT, ESKSQ, TAFOW, RWTFX, JYLAA, TRPEE, MMNSZ, EYDBL.
+Node RWTFX is directed to nodes TRPEE, TAFOW, VRXLA, ESKSQ, JYLAA, CHOGS, UWPJK, QOMPT, GODNO.
+Node ESITS is directed to nodes GODNO, MMNSZ, TAFOW, ESKSQ, EYDBL.
+Node EYDBL is directed to nodes TRPEE, QOMPT.
+Node ESKSQ is directed to nodes TAFOW, RWTFX, VRXLA, QOMPT, CHOGS, JYLAA, TRPEE, UWPJK, EYDBL, GODNO, MMNSZ.
+Node TAFOW is directed to nodes TRPEE, QOMPT, CHOGS, JYLAA, ESKSQ, VRXLA, RWTFX, UWPJK, EYDBL, MMNSZ.
+ Does a path exist from node EYDBL to node XBPOI? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node EYDBL -> Node TRPEE -> Node JYLAA -> Node MMNSZ -> Node XBPOI
+
+Q: Given a directed graph: G describes a directed graph among SUJIC, AZMHK, WCXGT, GSOMS, AJKXC, LPYJN, CRAEX, XGRJD, ERMXM, ONNUG, RVNEG, and MVMWK.
+In this graph:
+Node SUJIC is directed to nodes AZMHK, RVNEG, WCXGT, ERMXM, AJKXC, MVMWK, CRAEX, LPYJN, XGRJD.
+Node AZMHK is directed to nodes WCXGT, AJKXC, ERMXM, LPYJN, ONNUG, RVNEG.
+Node WCXGT is directed to nodes GSOMS, ERMXM, RVNEG, MVMWK, AZMHK, SUJIC, LPYJN.
+Node GSOMS is directed to nodes AJKXC, SUJIC, LPYJN, MVMWK, RVNEG, WCXGT, XGRJD, ONNUG.
+Node AJKXC is directed to nodes LPYJN, CRAEX, AZMHK, XGRJD, ERMXM, SUJIC, MVMWK, GSOMS, WCXGT, ONNUG, RVNEG.
+Node LPYJN is directed to nodes CRAEX, RVNEG, ONNUG, GSOMS, AZMHK, SUJIC, AJKXC, ERMXM, XGRJD.
+Node CRAEX is directed to nodes XGRJD, RVNEG, ERMXM, AZMHK, MVMWK, ONNUG, SUJIC.
+Node XGRJD is directed to nodes ERMXM, LPYJN, GSOMS, AZMHK, RVNEG, CRAEX, AJKXC, MVMWK.
+Node ERMXM is directed to nodes ONNUG, GSOMS, XGRJD, CRAEX, AJKXC, LPYJN, AZMHK, WCXGT, MVMWK, RVNEG.
+Node ONNUG is directed to nodes RVNEG, SUJIC, ERMXM, LPYJN, WCXGT, GSOMS, AZMHK, CRAEX.
+Node RVNEG is directed to nodes MVMWK, GSOMS, ERMXM, ONNUG, LPYJN, CRAEX, XGRJD, AJKXC.
+Node MVMWK is directed to nodes AJKXC, WCXGT, XGRJD, CRAEX, ONNUG.
+ Does a path exist from node AZMHK to node RVNEG? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node AZMHK -> Node RVNEG
+
+Q: Given a directed graph: G describes a directed graph among IWOJN, NZFAK, SMTSJ, QKHZU, NYVSC, SDADP, and RQNCH.
+In this graph:
+Node IWOJN is directed to nodes NYVSC.
+Node NZFAK is directed to nodes RQNCH, QKHZU.
+Node SMTSJ is directed to nodes NYVSC, QKHZU, NZFAK, IWOJN, SDADP.
+Node QKHZU is directed to nodes SDADP.
+Node NYVSC is directed to nodes QKHZU, SMTSJ.
+Node SDADP is directed to nodes IWOJN.
+Node RQNCH is directed to nodes QKHZU, SMTSJ.
+ Does a path exist from node QKHZU to node RQNCH? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node QKHZU -> Node SDADP -> Node IWOJN -> Node NYVSC -> Node SMTSJ -> Node NZFAK -> Node RQNCH
+
+Q: Given a directed graph: G describes a directed graph among KOJKP, OGSEC, TQLFY, LRLSP, OQNCU, XTQPR, ZXKDU, AKOHD, VELWR, and QUWIT.
+In this graph:
+Node KOJKP is directed to nodes AKOHD, QUWIT, OGSEC, TQLFY, ZXKDU, OQNCU, VELWR, LRLSP.
+Node OGSEC is directed to nodes ZXKDU, AKOHD, QUWIT, LRLSP, TQLFY, VELWR, OQNCU, KOJKP.
+Node TQLFY is directed to nodes ZXKDU, AKOHD, KOJKP, OQNCU, OGSEC, QUWIT, VELWR, LRLSP.
+Node LRLSP is directed to nodes OQNCU, QUWIT, ZXKDU, VELWR, OGSEC, TQLFY, AKOHD, KOJKP.
+Node OQNCU is directed to nodes TQLFY, KOJKP, ZXKDU, AKOHD, OGSEC, VELWR, QUWIT, LRLSP.
+Node ZXKDU is directed to nodes KOJKP, OQNCU, QUWIT, AKOHD, LRLSP, OGSEC, VELWR, TQLFY.
+Node AKOHD is directed to nodes OQNCU, ZXKDU, OGSEC, KOJKP, VELWR, LRLSP, TQLFY, QUWIT.
+Node VELWR is directed to nodes OQNCU, TQLFY, QUWIT, KOJKP, AKOHD, LRLSP, ZXKDU, OGSEC.
+Node QUWIT is directed to nodes LRLSP, KOJKP, VELWR, OQNCU, OGSEC, AKOHD, TQLFY, ZXKDU.
+ Does a path exist from node VELWR to node XTQPR? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Given a directed graph: G describes a directed graph among FBSZO, OUNMS, NQRBY, HNVQF, LBFQM, OLYFA, XCQJO, OBXJM, QTQVB, CGVYE, OXSGG, and SWJBG.
+In this graph:
+Node FBSZO is directed to nodes CGVYE, LBFQM, QTQVB, OBXJM.
+Node OUNMS is directed to nodes NQRBY, HNVQF, OLYFA, OXSGG.
+Node NQRBY is directed to nodes OLYFA, HNVQF.
+Node HNVQF is directed to nodes OXSGG, OUNMS, SWJBG, OLYFA.
+Node LBFQM is directed to nodes XCQJO.
+Node OLYFA is directed to nodes SWJBG, HNVQF, OUNMS, OXSGG, NQRBY.
+Node XCQJO is directed to nodes FBSZO, QTQVB, LBFQM, CGVYE.
+Node OBXJM is directed to nodes LBFQM, CGVYE, FBSZO, QTQVB, XCQJO.
+Node QTQVB is directed to nodes LBFQM, XCQJO, CGVYE.
+Node CGVYE is directed to nodes LBFQM, XCQJO, FBSZO.
+Node OXSGG is directed to nodes HNVQF, SWJBG, NQRBY.
+Node SWJBG is directed to nodes OLYFA, OXSGG.
+ Does a path exist from node LBFQM to node NQRBY? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+

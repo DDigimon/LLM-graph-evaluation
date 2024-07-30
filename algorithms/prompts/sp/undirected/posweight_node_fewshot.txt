@@ -1,0 +1,118 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+In this graph:
+Node 0 is connected to nodes 1 (weight: 6).
+Node 1 is connected to nodes 0 (weight: 6), 2 (weight: 4).
+Node 2 is connected to nodes 1 (weight: 4), 3 (weight: 9).
+Node 3 is connected to nodes 2 (weight: 9), 4 (weight: 6).
+Node 4 is connected to nodes 3 (weight: 6), 5 (weight: 8).
+Node 5 is connected to nodes 4 (weight: 8), 6 (weight: 2).
+Node 6 is connected to nodes 5 (weight: 2), 7 (weight: 6).
+Node 7 is connected to nodes 6 (weight: 6), 8 (weight: 2).
+Node 8 is connected to nodes 7 (weight: 2).
+ The question is: Does a path exist from node 7 to node 1? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 7 -> Node 6 -> Node 5 -> Node 4 -> Node 3 -> Node 2 -> Node 1
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, and 14.
+In this graph:
+Node 0 is connected to nodes 3 (weight: 4), 8 (weight: 3), 12 (weight: 2), 13 (weight: 1).
+Node 1 is connected to nodes 10 (weight: 8).
+Node 2 is connected to nodes 5 (weight: 2), 6 (weight: 8), 7 (weight: 7), 4 (weight: 1).
+Node 3 is connected to nodes 0 (weight: 4), 13 (weight: 9).
+Node 4 is connected to nodes 2 (weight: 1), 7 (weight: 5), 9 (weight: 4), 6 (weight: 8).
+Node 5 is connected to nodes 2 (weight: 2), 10 (weight: 1), 7 (weight: 4).
+Node 6 is connected to nodes 2 (weight: 8), 4 (weight: 8), 9 (weight: 6).
+Node 7 is connected to nodes 2 (weight: 7), 4 (weight: 5), 5 (weight: 4).
+Node 8 is connected to nodes 0 (weight: 3), 11 (weight: 9), 13 (weight: 1), 14 (weight: 3).
+Node 9 is connected to nodes 4 (weight: 4), 6 (weight: 6), 10 (weight: 6).
+Node 10 is connected to nodes 1 (weight: 8), 5 (weight: 1), 9 (weight: 6).
+Node 11 is connected to nodes 8 (weight: 9), 12 (weight: 9), 13 (weight: 6).
+Node 12 is connected to nodes 0 (weight: 2), 11 (weight: 9), 14 (weight: 7).
+Node 13 is connected to nodes 0 (weight: 1), 3 (weight: 9), 8 (weight: 1), 11 (weight: 6), 14 (weight: 4).
+Node 14 is connected to nodes 8 (weight: 3), 12 (weight: 7), 13 (weight: 4).
+ The question is: Does a path exist from node 5 to node 14? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, and 5.
+In this graph:
+Node 0 is connected to nodes 1 (weight: 2).
+Node 1 is connected to nodes 0 (weight: 2), 2 (weight: 3).
+Node 2 is connected to nodes 1 (weight: 3), 3 (weight: 4).
+Node 3 is connected to nodes 2 (weight: 4), 4 (weight: 8).
+Node 4 is connected to nodes 3 (weight: 8).
+ The question is: Does a path exist from node 4 to node 0? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 4 -> Node 3 -> Node 2 -> Node 1 -> Node 0
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.
+In this graph:
+Node 0 is connected to nodes 1 (weight: 9), 6 (weight: 7), 3 (weight: 5), 7 (weight: 7), 9 (weight: 4), 10 (weight: 8).
+Node 1 is connected to nodes 0 (weight: 9), 2 (weight: 8), 10 (weight: 8), 9 (weight: 2), 8 (weight: 3), 5 (weight: 5).
+Node 2 is connected to nodes 1 (weight: 8), 3 (weight: 5), 4 (weight: 6), 7 (weight: 9), 10 (weight: 3), 5 (weight: 6).
+Node 3 is connected to nodes 0 (weight: 5), 2 (weight: 5), 4 (weight: 3), 7 (weight: 2), 6 (weight: 1), 10 (weight: 9).
+Node 4 is connected to nodes 2 (weight: 6), 3 (weight: 3), 5 (weight: 5), 8 (weight: 8), 6 (weight: 9), 9 (weight: 3), 7 (weight: 6).
+Node 5 is connected to nodes 1 (weight: 5), 2 (weight: 6), 4 (weight: 5), 6 (weight: 7), 9 (weight: 4), 10 (weight: 1).
+Node 6 is connected to nodes 0 (weight: 7), 3 (weight: 1), 4 (weight: 9), 5 (weight: 7), 7 (weight: 8).
+Node 7 is connected to nodes 0 (weight: 7), 2 (weight: 9), 3 (weight: 2), 4 (weight: 6), 6 (weight: 8), 8 (weight: 1), 9 (weight: 2).
+Node 8 is connected to nodes 1 (weight: 3), 4 (weight: 8), 7 (weight: 1), 9 (weight: 2), 10 (weight: 2).
+Node 9 is connected to nodes 0 (weight: 4), 1 (weight: 2), 4 (weight: 3), 5 (weight: 4), 7 (weight: 2), 8 (weight: 2), 10 (weight: 9).
+Node 10 is connected to nodes 0 (weight: 8), 1 (weight: 8), 2 (weight: 3), 3 (weight: 9), 5 (weight: 1), 8 (weight: 2), 9 (weight: 9).
+ The question is: Does a path exist from node 6 to node 8? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 6 -> Node 3 -> Node 7 -> Node 8
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+In this graph:
+Node 1 is connected to nodes 2 (weight: 1), 6 (weight: 3), 8 (weight: 7), 4 (weight: 3), 5 (weight: 8), 3 (weight: 5).
+Node 2 is connected to nodes 1 (weight: 1), 5 (weight: 7), 7 (weight: 9), 9 (weight: 5), 6 (weight: 9).
+Node 3 is connected to nodes 1 (weight: 5), 6 (weight: 9), 7 (weight: 2), 8 (weight: 9), 9 (weight: 3), 4 (weight: 1), 5 (weight: 2).
+Node 4 is connected to nodes 1 (weight: 3), 3 (weight: 1), 6 (weight: 3), 7 (weight: 4), 8 (weight: 8).
+Node 5 is connected to nodes 1 (weight: 8), 2 (weight: 7), 3 (weight: 2), 6 (weight: 3), 7 (weight: 5), 8 (weight: 7), 9 (weight: 7).
+Node 6 is connected to nodes 1 (weight: 3), 2 (weight: 9), 3 (weight: 9), 4 (weight: 3), 5 (weight: 3), 7 (weight: 5).
+Node 7 is connected to nodes 2 (weight: 9), 3 (weight: 2), 4 (weight: 4), 5 (weight: 5), 6 (weight: 5), 9 (weight: 7), 8 (weight: 2).
+Node 8 is connected to nodes 1 (weight: 7), 3 (weight: 9), 4 (weight: 8), 5 (weight: 7), 7 (weight: 2), 9 (weight: 2).
+Node 9 is connected to nodes 2 (weight: 5), 3 (weight: 3), 5 (weight: 7), 7 (weight: 7), 8 (weight: 2).
+ The question is: Does a path exist from node 0 to node 4? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+In this graph:
+Node 0 is connected to nodes 1 (weight: 7), 2 (weight: 9), 7 (weight: 9).
+Node 1 is connected to nodes 0 (weight: 7), 2 (weight: 3), 8 (weight: 5), 9 (weight: 2), 5 (weight: 9), 3 (weight: 3), 6 (weight: 4), 4 (weight: 3).
+Node 2 is connected to nodes 0 (weight: 9), 1 (weight: 3), 3 (weight: 7), 7 (weight: 6), 4 (weight: 6), 5 (weight: 9), 9 (weight: 7), 6 (weight: 8).
+Node 3 is connected to nodes 1 (weight: 3), 2 (weight: 7), 4 (weight: 8), 5 (weight: 3), 8 (weight: 5), 7 (weight: 3), 6 (weight: 2).
+Node 4 is connected to nodes 1 (weight: 3), 2 (weight: 6), 3 (weight: 8), 5 (weight: 2), 6 (weight: 6), 8 (weight: 2), 9 (weight: 1).
+Node 5 is connected to nodes 1 (weight: 9), 2 (weight: 9), 3 (weight: 3), 4 (weight: 2), 6 (weight: 2), 7 (weight: 7), 8 (weight: 4).
+Node 6 is connected to nodes 1 (weight: 4), 2 (weight: 8), 3 (weight: 2), 4 (weight: 6), 5 (weight: 2), 7 (weight: 2).
+Node 7 is connected to nodes 0 (weight: 9), 2 (weight: 6), 3 (weight: 3), 5 (weight: 7), 6 (weight: 2), 8 (weight: 7), 9 (weight: 6).
+Node 8 is connected to nodes 1 (weight: 5), 3 (weight: 5), 4 (weight: 2), 5 (weight: 4), 7 (weight: 7), 9 (weight: 8).
+Node 9 is connected to nodes 1 (weight: 2), 2 (weight: 7), 4 (weight: 1), 7 (weight: 6), 8 (weight: 8).
+ The question is: Does a path exist from node 5 to node 8? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 5 -> Node 8
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, and 4.
+In this graph:
+Node 0 is connected to nodes 2 (weight: 2), 3 (weight: 8).
+Node 1 is connected to nodes 3 (weight: 8).
+Node 2 is connected to nodes 0 (weight: 2).
+Node 3 is connected to nodes 0 (weight: 8), 1 (weight: 8), 4 (weight: 1).
+Node 4 is connected to nodes 3 (weight: 1).
+ The question is: Does a path exist from node 4 to node 2? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 4 -> Node 3 -> Node 0 -> Node 2
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.
+In this graph:
+Node 0 is connected to nodes 5 (weight: 8), 3 (weight: 1), 7 (weight: 8), 9 (weight: 2), 13 (weight: 2).
+Node 1 is connected to nodes 2 (weight: 5), 10 (weight: 6), 12 (weight: 7), 6 (weight: 8), 4 (weight: 2).
+Node 2 is connected to nodes 1 (weight: 5), 12 (weight: 7), 6 (weight: 3), 10 (weight: 8), 4 (weight: 7).
+Node 3 is connected to nodes 0 (weight: 1), 13 (weight: 8), 9 (weight: 2), 11 (weight: 1), 8 (weight: 7).
+Node 4 is connected to nodes 1 (weight: 2), 2 (weight: 7), 12 (weight: 6), 6 (weight: 9), 10 (weight: 4).
+Node 5 is connected to nodes 0 (weight: 8), 13 (weight: 3), 7 (weight: 5), 6 (weight: 6).
+Node 6 is connected to nodes 1 (weight: 8), 2 (weight: 3), 4 (weight: 9), 5 (weight: 6), 12 (weight: 9), 10 (weight: 7).
+Node 7 is connected to nodes 0 (weight: 8), 5 (weight: 5), 13 (weight: 8), 9 (weight: 2).
+Node 8 is connected to nodes 3 (weight: 7), 9 (weight: 5), 11 (weight: 8).
+Node 9 is connected to nodes 0 (weight: 2), 3 (weight: 2), 7 (weight: 2), 8 (weight: 5), 13 (weight: 6).
+Node 10 is connected to nodes 1 (weight: 6), 2 (weight: 8), 4 (weight: 4), 6 (weight: 7), 12 (weight: 9).
+Node 11 is connected to nodes 3 (weight: 1), 8 (weight: 8), 13 (weight: 2).
+Node 12 is connected to nodes 1 (weight: 7), 2 (weight: 7), 4 (weight: 6), 6 (weight: 9), 10 (weight: 9).
+Node 13 is connected to nodes 0 (weight: 2), 3 (weight: 8), 5 (weight: 3), 7 (weight: 8), 9 (weight: 6), 11 (weight: 2).
+ The question is: Does a path exist from node 4 to node 8? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 4 -> Node 6 -> Node 5 -> Node 7 -> Node 9 -> Node 8
+

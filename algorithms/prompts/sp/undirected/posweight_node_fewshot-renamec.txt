@@ -1,0 +1,126 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among CZLBX, SBYBD, ESAUS, SUCPZ, IWJHV, YVZBK, VVKHH, PRSPY, CKGVL, JHLYH, CNJAM, and FRLDC.
+In this graph:
+Node VVKHH is connected to nodes CZLBX (weight: 2), SBYBD (weight: 7), SUCPZ (weight: 4), IWJHV (weight: 9), YVZBK (weight: 4), JHLYH (weight: 8), CKGVL (weight: 8), FRLDC (weight: 7), CNJAM (weight: 8), PRSPY (weight: 9).
+Node ESAUS is connected to nodes FRLDC (weight: 4), CKGVL (weight: 9), YVZBK (weight: 6), SUCPZ (weight: 4).
+Node JHLYH is connected to nodes CZLBX (weight: 7), SBYBD (weight: 7), SUCPZ (weight: 3), IWJHV (weight: 9), VVKHH (weight: 8), PRSPY (weight: 3), CKGVL (weight: 2), CNJAM (weight: 8).
+Node PRSPY is connected to nodes CZLBX (weight: 5), SBYBD (weight: 5), IWJHV (weight: 8), YVZBK (weight: 8), VVKHH (weight: 9), JHLYH (weight: 3), CKGVL (weight: 1), FRLDC (weight: 7).
+Node FRLDC is connected to nodes ESAUS (weight: 4), SUCPZ (weight: 6), IWJHV (weight: 9), YVZBK (weight: 2), VVKHH (weight: 7), PRSPY (weight: 7), CKGVL (weight: 9), CNJAM (weight: 4).
+Node CNJAM is connected to nodes CZLBX (weight: 2), SBYBD (weight: 3), SUCPZ (weight: 8), IWJHV (weight: 9), YVZBK (weight: 6), VVKHH (weight: 8), CKGVL (weight: 7), JHLYH (weight: 8), FRLDC (weight: 4).
+Node CZLBX is connected to nodes PRSPY (weight: 5), VVKHH (weight: 2), SBYBD (weight: 7), CNJAM (weight: 2), JHLYH (weight: 7).
+Node IWJHV is connected to nodes SUCPZ (weight: 8), FRLDC (weight: 9), PRSPY (weight: 8), CKGVL (weight: 3), YVZBK (weight: 9), VVKHH (weight: 9), JHLYH (weight: 9), CNJAM (weight: 9).
+Node CKGVL is connected to nodes ESAUS (weight: 9), SUCPZ (weight: 1), IWJHV (weight: 3), YVZBK (weight: 7), VVKHH (weight: 8), PRSPY (weight: 1), CNJAM (weight: 7), JHLYH (weight: 2), FRLDC (weight: 9).
+Node YVZBK is connected to nodes SBYBD (weight: 1), ESAUS (weight: 6), SUCPZ (weight: 2), IWJHV (weight: 9), CNJAM (weight: 6), CKGVL (weight: 7), VVKHH (weight: 4), PRSPY (weight: 8), FRLDC (weight: 2).
+Node SBYBD is connected to nodes CZLBX (weight: 7), PRSPY (weight: 5), YVZBK (weight: 1), CNJAM (weight: 3), VVKHH (weight: 7), SUCPZ (weight: 4), JHLYH (weight: 7).
+Node SUCPZ is connected to nodes SBYBD (weight: 4), ESAUS (weight: 4), CKGVL (weight: 1), CNJAM (weight: 8), YVZBK (weight: 2), JHLYH (weight: 3), VVKHH (weight: 4), FRLDC (weight: 6), IWJHV (weight: 8).
+ The question is: Does a path exist from node CZLBX to node ESAUS? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node CZLBX -> Node CNJAM -> Node FRLDC -> Node ESAUS
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among JFKMS, HWYZU, CEKRT, PHFRG, OCLBE, RQKQG, PTTCS, QPQEX, CPNYC, ANUDL, ZERET, and SCRWI.
+In this graph:
+Node JFKMS is connected to nodes OCLBE (weight: 9), ANUDL (weight: 3), ZERET (weight: 1), QPQEX (weight: 4), PHFRG (weight: 5).
+Node ZERET is connected to nodes JFKMS (weight: 1), HWYZU (weight: 8), SCRWI (weight: 4).
+Node ANUDL is connected to nodes JFKMS (weight: 3), QPQEX (weight: 7).
+Node OCLBE is connected to nodes JFKMS (weight: 9), CEKRT (weight: 3), QPQEX (weight: 7).
+Node CEKRT is connected to nodes HWYZU (weight: 2), OCLBE (weight: 3), PHFRG (weight: 7), RQKQG (weight: 5).
+Node SCRWI is connected to nodes RQKQG (weight: 2), PTTCS (weight: 3), ZERET (weight: 4).
+Node CPNYC is connected to nodes HWYZU (weight: 4), RQKQG (weight: 5).
+Node QPQEX is connected to nodes JFKMS (weight: 4), PHFRG (weight: 5), OCLBE (weight: 7), PTTCS (weight: 8), ANUDL (weight: 7).
+Node PHFRG is connected to nodes JFKMS (weight: 5), CEKRT (weight: 7), QPQEX (weight: 5), PTTCS (weight: 3).
+Node HWYZU is connected to nodes CPNYC (weight: 4), ZERET (weight: 8), PTTCS (weight: 8), RQKQG (weight: 9), CEKRT (weight: 2).
+Node RQKQG is connected to nodes HWYZU (weight: 9), CEKRT (weight: 5), SCRWI (weight: 2), CPNYC (weight: 5), PTTCS (weight: 6).
+Node PTTCS is connected to nodes HWYZU (weight: 8), PHFRG (weight: 3), RQKQG (weight: 6), QPQEX (weight: 8), SCRWI (weight: 3).
+ The question is: Does a path exist from node CPNYC to node ANUDL? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node CPNYC -> Node RQKQG -> Node SCRWI -> Node ZERET -> Node JFKMS -> Node ANUDL
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among WPSIS, JCIFO, WPOGJ, TJDPZ, UJVCP, BLNLF, NLLAZ, COSFM, RGJPA, YHQNS, EEWGS, and PUOCX.
+In this graph:
+Node BLNLF is connected to nodes WPSIS (weight: 8), UJVCP (weight: 2).
+Node COSFM is connected to nodes TJDPZ (weight: 4), PUOCX (weight: 4).
+Node YHQNS is connected to nodes JCIFO (weight: 7), WPOGJ (weight: 3), RGJPA (weight: 5), EEWGS (weight: 8).
+Node PUOCX is connected to nodes WPSIS (weight: 3), TJDPZ (weight: 8), COSFM (weight: 4).
+Node EEWGS is connected to nodes WPOGJ (weight: 4), YHQNS (weight: 8).
+Node RGJPA is connected to nodes JCIFO (weight: 4), YHQNS (weight: 5).
+Node UJVCP is connected to nodes TJDPZ (weight: 4), BLNLF (weight: 2).
+Node JCIFO is connected to nodes WPOGJ (weight: 8), RGJPA (weight: 4), YHQNS (weight: 7).
+Node TJDPZ is connected to nodes UJVCP (weight: 4), PUOCX (weight: 8), COSFM (weight: 4).
+Node WPOGJ is connected to nodes JCIFO (weight: 8), EEWGS (weight: 4), YHQNS (weight: 3).
+Node WPSIS is connected to nodes BLNLF (weight: 8), PUOCX (weight: 3).
+ The question is: Does a path exist from node UJVCP to node YHQNS? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among VKXFB, VLGKL, BLPUY, TLOWH, BFYYX, AJHEQ, CFOHN, PFITR, and PUZTH.
+In this graph:
+Node BLPUY is connected to nodes VKXFB (weight: 4), VLGKL (weight: 6), TLOWH (weight: 7), PUZTH (weight: 1), BFYYX (weight: 9), AJHEQ (weight: 5).
+Node AJHEQ is connected to nodes VKXFB (weight: 6), BLPUY (weight: 5), BFYYX (weight: 3), CFOHN (weight: 9), PFITR (weight: 5).
+Node VKXFB is connected to nodes VLGKL (weight: 7), PUZTH (weight: 5), BLPUY (weight: 4), CFOHN (weight: 2), BFYYX (weight: 1), AJHEQ (weight: 6), PFITR (weight: 9).
+Node CFOHN is connected to nodes VKXFB (weight: 2), VLGKL (weight: 5), TLOWH (weight: 2), BFYYX (weight: 9), AJHEQ (weight: 9), PFITR (weight: 2), PUZTH (weight: 6).
+Node PFITR is connected to nodes VKXFB (weight: 9), TLOWH (weight: 6), AJHEQ (weight: 5), CFOHN (weight: 2), PUZTH (weight: 4).
+Node BFYYX is connected to nodes VKXFB (weight: 1), BLPUY (weight: 9), TLOWH (weight: 5), AJHEQ (weight: 3), CFOHN (weight: 9).
+Node VLGKL is connected to nodes VKXFB (weight: 7), BLPUY (weight: 6), PUZTH (weight: 5), CFOHN (weight: 5).
+Node PUZTH is connected to nodes VKXFB (weight: 5), VLGKL (weight: 5), BLPUY (weight: 1), TLOWH (weight: 7), CFOHN (weight: 6), PFITR (weight: 4).
+Node TLOWH is connected to nodes BLPUY (weight: 7), BFYYX (weight: 5), PFITR (weight: 6), PUZTH (weight: 7), CFOHN (weight: 2).
+ The question is: Does a path exist from node AJHEQ to node PFITR? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node AJHEQ -> Node PFITR
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among FUZYI, SQRJO, WSDFF, GJQNN, ZUWDE, HFYDY, OFXVC, HOBNG, OPVAP, and ZGEXJ.
+In this graph:
+Node GJQNN is connected to nodes WSDFF (weight: 1), ZGEXJ (weight: 1), ZUWDE (weight: 8).
+Node OFXVC is connected to nodes FUZYI (weight: 1), SQRJO (weight: 6), WSDFF (weight: 4), ZUWDE (weight: 6), ZGEXJ (weight: 1).
+Node SQRJO is connected to nodes FUZYI (weight: 8), ZUWDE (weight: 2), OFXVC (weight: 6), ZGEXJ (weight: 7), HOBNG (weight: 7), WSDFF (weight: 3).
+Node OPVAP is connected to nodes FUZYI (weight: 3), ZUWDE (weight: 4), HOBNG (weight: 9), ZGEXJ (weight: 2).
+Node ZUWDE is connected to nodes FUZYI (weight: 5), SQRJO (weight: 2), WSDFF (weight: 1), GJQNN (weight: 8), OFXVC (weight: 6), OPVAP (weight: 4), ZGEXJ (weight: 3).
+Node WSDFF is connected to nodes SQRJO (weight: 3), OFXVC (weight: 4), HOBNG (weight: 3), ZGEXJ (weight: 7), ZUWDE (weight: 1), GJQNN (weight: 1).
+Node FUZYI is connected to nodes SQRJO (weight: 8), OFXVC (weight: 1), OPVAP (weight: 3), HOBNG (weight: 2), ZUWDE (weight: 5).
+Node HOBNG is connected to nodes FUZYI (weight: 2), SQRJO (weight: 7), WSDFF (weight: 3), OPVAP (weight: 9), ZGEXJ (weight: 3).
+Node ZGEXJ is connected to nodes SQRJO (weight: 7), WSDFF (weight: 7), GJQNN (weight: 1), ZUWDE (weight: 3), OFXVC (weight: 1), HOBNG (weight: 3), OPVAP (weight: 2).
+ The question is: Does a path exist from node HFYDY to node HOBNG? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among FOTZT, PBDXK, GIEIY, UUSCU, MDDPH, VXRPX, EFSYW, and OKYDJ.
+In this graph:
+Node PBDXK is connected to nodes FOTZT (weight: 6), GIEIY (weight: 7), UUSCU (weight: 4), VXRPX (weight: 5), OKYDJ (weight: 4), EFSYW (weight: 5).
+Node VXRPX is connected to nodes FOTZT (weight: 6), PBDXK (weight: 5), GIEIY (weight: 9), MDDPH (weight: 1), EFSYW (weight: 2).
+Node EFSYW is connected to nodes FOTZT (weight: 7), PBDXK (weight: 5), GIEIY (weight: 2), UUSCU (weight: 2), MDDPH (weight: 4), VXRPX (weight: 2), OKYDJ (weight: 2).
+Node MDDPH is connected to nodes GIEIY (weight: 4), UUSCU (weight: 5), VXRPX (weight: 1), EFSYW (weight: 4).
+Node UUSCU is connected to nodes FOTZT (weight: 4), PBDXK (weight: 4), GIEIY (weight: 2), MDDPH (weight: 5), OKYDJ (weight: 9), EFSYW (weight: 2).
+Node FOTZT is connected to nodes PBDXK (weight: 6), VXRPX (weight: 6), GIEIY (weight: 2), OKYDJ (weight: 2), UUSCU (weight: 4), EFSYW (weight: 7).
+Node GIEIY is connected to nodes FOTZT (weight: 2), PBDXK (weight: 7), UUSCU (weight: 2), VXRPX (weight: 9), MDDPH (weight: 4), OKYDJ (weight: 7), EFSYW (weight: 2).
+Node OKYDJ is connected to nodes FOTZT (weight: 2), PBDXK (weight: 4), GIEIY (weight: 7), UUSCU (weight: 9), EFSYW (weight: 2).
+ The question is: Does a path exist from node UUSCU to node VXRPX? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node UUSCU -> Node EFSYW -> Node VXRPX
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among RRDRR, MNQJH, QTFQJ, DZYWE, FXJJW, LGLEJ, WQLVW, ALZEK, PYXHP, CHQVS, IKUOQ, UJWBI, and MAZKI.
+In this graph:
+Node MNQJH is connected to nodes IKUOQ (weight: 9), WQLVW (weight: 2), DZYWE (weight: 4).
+Node CHQVS is connected to nodes FXJJW (weight: 5), PYXHP (weight: 8).
+Node ALZEK is connected to nodes PYXHP (weight: 3), MAZKI (weight: 8).
+Node RRDRR is connected to nodes MAZKI (weight: 1).
+Node IKUOQ is connected to nodes MNQJH (weight: 9), DZYWE (weight: 5), UJWBI (weight: 7).
+Node PYXHP is connected to nodes QTFQJ (weight: 4), FXJJW (weight: 3), ALZEK (weight: 3), CHQVS (weight: 8).
+Node DZYWE is connected to nodes MNQJH (weight: 4), QTFQJ (weight: 9), IKUOQ (weight: 5).
+Node MAZKI is connected to nodes RRDRR (weight: 1), ALZEK (weight: 8).
+Node UJWBI is connected to nodes QTFQJ (weight: 5), FXJJW (weight: 8), LGLEJ (weight: 3), IKUOQ (weight: 7).
+Node FXJJW is connected to nodes LGLEJ (weight: 6), UJWBI (weight: 8), CHQVS (weight: 5), PYXHP (weight: 3).
+Node WQLVW is connected to nodes MNQJH (weight: 2).
+Node LGLEJ is connected to nodes QTFQJ (weight: 2), FXJJW (weight: 6), UJWBI (weight: 3).
+Node QTFQJ is connected to nodes LGLEJ (weight: 2), PYXHP (weight: 4), DZYWE (weight: 9), UJWBI (weight: 5).
+ The question is: Does a path exist from node RRDRR to node MNQJH? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node RRDRR -> Node MAZKI -> Node ALZEK -> Node PYXHP -> Node QTFQJ -> Node DZYWE -> Node MNQJH
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among RTATJ, RWSCA, CLMZS, AAULP, DFCIZ, OQAAA, KARPG, SSKWW, VFKVX, THWUS, NXTGD, and JRZNA.
+In this graph:
+Node OQAAA is connected to nodes RWSCA (weight: 7), DFCIZ (weight: 3), JRZNA (weight: 1), NXTGD (weight: 3).
+Node SSKWW is connected to nodes RTATJ (weight: 2), CLMZS (weight: 6), AAULP (weight: 3), THWUS (weight: 3).
+Node JRZNA is connected to nodes CLMZS (weight: 1), OQAAA (weight: 1), VFKVX (weight: 8).
+Node RWSCA is connected to nodes OQAAA (weight: 7), DFCIZ (weight: 7), NXTGD (weight: 4).
+Node CLMZS is connected to nodes VFKVX (weight: 6), SSKWW (weight: 6), JRZNA (weight: 1).
+Node AAULP is connected to nodes RTATJ (weight: 7), SSKWW (weight: 3), THWUS (weight: 2), KARPG (weight: 8).
+Node THWUS is connected to nodes RTATJ (weight: 4), AAULP (weight: 2), SSKWW (weight: 3).
+Node DFCIZ is connected to nodes RWSCA (weight: 7), VFKVX (weight: 4), OQAAA (weight: 3).
+Node KARPG is connected to nodes AAULP (weight: 8), VFKVX (weight: 4).
+Node RTATJ is connected to nodes THWUS (weight: 4), SSKWW (weight: 2), AAULP (weight: 7), VFKVX (weight: 7).
+Node NXTGD is connected to nodes RWSCA (weight: 4), OQAAA (weight: 3).
+Node VFKVX is connected to nodes RTATJ (weight: 7), CLMZS (weight: 6), DFCIZ (weight: 4), KARPG (weight: 4), JRZNA (weight: 8).
+ The question is: Does a path exist from node THWUS to node NXTGD? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node THWUS -> Node SSKWW -> Node CLMZS -> Node JRZNA -> Node OQAAA -> Node NXTGD
+

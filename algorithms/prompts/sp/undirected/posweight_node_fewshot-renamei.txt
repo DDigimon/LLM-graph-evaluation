@@ -1,0 +1,128 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 75257, 52345, 99238, 94611, 85953, 25681, 49552, 18999, 74359, 26657, 65303, 95605, and 42585.
+In this graph:
+Node 99238 is connected to nodes 75257 (weight: 3), 52345 (weight: 5), 94611 (weight: 8).
+Node 52345 is connected to nodes 75257 (weight: 1), 99238 (weight: 5), 85953 (weight: 5), 18999 (weight: 5), 42585 (weight: 6).
+Node 65303 is connected to nodes 94611 (weight: 9), 85953 (weight: 6), 26657 (weight: 6), 95605 (weight: 1), 42585 (weight: 7).
+Node 85953 is connected to nodes 75257 (weight: 8), 52345 (weight: 5), 94611 (weight: 7), 25681 (weight: 4), 95605 (weight: 5), 49552 (weight: 6), 65303 (weight: 6).
+Node 42585 is connected to nodes 75257 (weight: 6), 52345 (weight: 6), 94611 (weight: 8), 49552 (weight: 2), 18999 (weight: 5), 74359 (weight: 2), 26657 (weight: 5), 65303 (weight: 7), 95605 (weight: 3).
+Node 95605 is connected to nodes 85953 (weight: 5), 25681 (weight: 2), 49552 (weight: 3), 65303 (weight: 1), 42585 (weight: 3).
+Node 25681 is connected to nodes 85953 (weight: 4), 49552 (weight: 1), 95605 (weight: 2), 74359 (weight: 2).
+Node 74359 is connected to nodes 25681 (weight: 2), 18999 (weight: 6), 26657 (weight: 1), 42585 (weight: 2).
+Node 26657 is connected to nodes 74359 (weight: 1), 65303 (weight: 6), 42585 (weight: 5).
+Node 49552 is connected to nodes 75257 (weight: 7), 94611 (weight: 5), 85953 (weight: 6), 25681 (weight: 1), 18999 (weight: 7), 42585 (weight: 2), 95605 (weight: 3).
+Node 75257 is connected to nodes 52345 (weight: 1), 49552 (weight: 7), 99238 (weight: 3), 42585 (weight: 6), 94611 (weight: 3), 85953 (weight: 8).
+Node 94611 is connected to nodes 75257 (weight: 3), 99238 (weight: 8), 85953 (weight: 7), 65303 (weight: 9), 42585 (weight: 8), 49552 (weight: 5).
+Node 18999 is connected to nodes 52345 (weight: 5), 49552 (weight: 7), 74359 (weight: 6), 42585 (weight: 5).
+ The question is: Does a path exist from node 74359 to node 25681? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 74359 -> Node 25681
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 58203, 51910, 18444, 72269, 60429, 48985, 58956, 15820, 11197, 1340, 57827, 94981, 60138, and 32805.
+In this graph:
+Node 1340 is connected to nodes 51910 (weight: 8), 72269 (weight: 4), 60429 (weight: 9), 11197 (weight: 7), 57827 (weight: 6), 32805 (weight: 7).
+Node 11197 is connected to nodes 58203 (weight: 7), 18444 (weight: 6), 60429 (weight: 7), 48985 (weight: 8), 15820 (weight: 6), 1340 (weight: 7), 32805 (weight: 6).
+Node 60429 is connected to nodes 58203 (weight: 6), 72269 (weight: 8), 48985 (weight: 5), 15820 (weight: 1), 1340 (weight: 9), 11197 (weight: 7), 57827 (weight: 1).
+Node 57827 is connected to nodes 72269 (weight: 8), 60429 (weight: 1), 58956 (weight: 3), 1340 (weight: 6), 94981 (weight: 7), 60138 (weight: 7).
+Node 72269 is connected to nodes 18444 (weight: 7), 60429 (weight: 8), 57827 (weight: 8), 1340 (weight: 4), 48985 (weight: 7).
+Node 58956 is connected to nodes 48985 (weight: 2), 15820 (weight: 8), 57827 (weight: 3).
+Node 94981 is connected to nodes 18444 (weight: 8), 57827 (weight: 7), 60138 (weight: 4).
+Node 51910 is connected to nodes 58203 (weight: 6), 18444 (weight: 9), 1340 (weight: 8), 15820 (weight: 5), 48985 (weight: 6).
+Node 15820 is connected to nodes 51910 (weight: 5), 60429 (weight: 1), 58956 (weight: 8), 11197 (weight: 6), 60138 (weight: 8).
+Node 48985 is connected to nodes 51910 (weight: 6), 18444 (weight: 1), 72269 (weight: 7), 60429 (weight: 5), 58956 (weight: 2), 11197 (weight: 8).
+Node 58203 is connected to nodes 51910 (weight: 6), 11197 (weight: 7), 60429 (weight: 6).
+Node 60138 is connected to nodes 15820 (weight: 8), 57827 (weight: 7), 94981 (weight: 4), 32805 (weight: 5).
+Node 18444 is connected to nodes 51910 (weight: 9), 72269 (weight: 7), 32805 (weight: 8), 48985 (weight: 1), 94981 (weight: 8), 11197 (weight: 6).
+Node 32805 is connected to nodes 18444 (weight: 8), 11197 (weight: 6), 1340 (weight: 7), 60138 (weight: 5).
+ The question is: Does a path exist from node 58956 to node 51910? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 58956 -> Node 48985 -> Node 51910
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 79436, 88842, 68631, 17803, 45982, 23278, 56989, 1284, and 357.
+In this graph:
+Node 23278 is connected to nodes 88842 (weight: 7), 17803 (weight: 6), 56989 (weight: 3), 357 (weight: 9).
+Node 56989 is connected to nodes 79436 (weight: 6), 23278 (weight: 3), 357 (weight: 3).
+Node 68631 is connected to nodes 79436 (weight: 3), 1284 (weight: 5), 45982 (weight: 1).
+Node 88842 is connected to nodes 23278 (weight: 7).
+Node 17803 is connected to nodes 79436 (weight: 5), 23278 (weight: 6).
+Node 79436 is connected to nodes 357 (weight: 3), 17803 (weight: 5), 56989 (weight: 6), 68631 (weight: 3).
+Node 357 is connected to nodes 79436 (weight: 3), 23278 (weight: 9), 56989 (weight: 3), 1284 (weight: 2).
+Node 1284 is connected to nodes 68631 (weight: 5), 357 (weight: 2).
+Node 45982 is connected to nodes 68631 (weight: 1).
+ The question is: Does a path exist from node 45982 to node 88842? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 45982 -> Node 68631 -> Node 79436 -> Node 56989 -> Node 23278 -> Node 88842
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 1463, 30274, 26299, 94658, 78978, 51809, 8502, 64644, and 68891.
+In this graph:
+Node 68891 is connected to nodes 30274 (weight: 5), 26299 (weight: 3), 94658 (weight: 5), 78978 (weight: 2), 8502 (weight: 8), 64644 (weight: 4).
+Node 94658 is connected to nodes 1463 (weight: 2), 30274 (weight: 7), 26299 (weight: 5), 64644 (weight: 7), 78978 (weight: 3), 68891 (weight: 5).
+Node 64644 is connected to nodes 1463 (weight: 7), 30274 (weight: 6), 26299 (weight: 9), 94658 (weight: 7), 78978 (weight: 2), 8502 (weight: 2), 68891 (weight: 4).
+Node 78978 is connected to nodes 1463 (weight: 8), 30274 (weight: 3), 26299 (weight: 6), 94658 (weight: 3), 64644 (weight: 2), 8502 (weight: 8), 68891 (weight: 2).
+Node 51809 is connected to nodes 8502 (weight: 5).
+Node 8502 is connected to nodes 1463 (weight: 6), 30274 (weight: 8), 26299 (weight: 5), 78978 (weight: 8), 51809 (weight: 5), 68891 (weight: 8), 64644 (weight: 2).
+Node 26299 is connected to nodes 1463 (weight: 7), 30274 (weight: 3), 8502 (weight: 5), 78978 (weight: 6), 94658 (weight: 5), 68891 (weight: 3), 64644 (weight: 9).
+Node 30274 is connected to nodes 1463 (weight: 3), 94658 (weight: 7), 26299 (weight: 3), 64644 (weight: 6), 78978 (weight: 3), 68891 (weight: 5), 8502 (weight: 8).
+Node 1463 is connected to nodes 8502 (weight: 6), 64644 (weight: 7), 94658 (weight: 2), 30274 (weight: 3), 78978 (weight: 8), 26299 (weight: 7).
+ The question is: Does a path exist from node 94658 to node 51809? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 94658 -> Node 78978 -> Node 64644 -> Node 8502 -> Node 51809
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 41420, 40985, 19429, 85747, 27503, 77581, 54840, 38275, 92572, 2293, 32132, 66011, 87795, and 91118.
+In this graph:
+Node 77581 is connected to nodes 27503 (weight: 3), 54840 (weight: 3).
+Node 19429 is connected to nodes 40985 (weight: 5), 85747 (weight: 7).
+Node 40985 is connected to nodes 41420 (weight: 5), 19429 (weight: 5).
+Node 41420 is connected to nodes 40985 (weight: 5).
+Node 27503 is connected to nodes 85747 (weight: 7), 77581 (weight: 3).
+Node 85747 is connected to nodes 19429 (weight: 7), 27503 (weight: 7).
+Node 54840 is connected to nodes 77581 (weight: 3).
+ The question is: Does a path exist from node 54840 to node 41420? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 54840 -> Node 77581 -> Node 27503 -> Node 85747 -> Node 19429 -> Node 40985 -> Node 41420
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 34048, 93481, 15398, 27089, 22616, 92230, 49891, 93018, and 83017.
+In this graph:
+Node 49891 is connected to nodes 34048 (weight: 7), 27089 (weight: 5), 83017 (weight: 3).
+Node 83017 is connected to nodes 22616 (weight: 7), 92230 (weight: 9), 49891 (weight: 3).
+Node 22616 is connected to nodes 34048 (weight: 7), 83017 (weight: 7).
+Node 27089 is connected to nodes 34048 (weight: 4), 49891 (weight: 5), 92230 (weight: 3).
+Node 93481 is connected to nodes 34048 (weight: 6).
+Node 34048 is connected to nodes 92230 (weight: 6), 93481 (weight: 6), 49891 (weight: 7), 93018 (weight: 1), 27089 (weight: 4), 22616 (weight: 7).
+Node 93018 is connected to nodes 34048 (weight: 1), 92230 (weight: 4).
+Node 92230 is connected to nodes 34048 (weight: 6), 27089 (weight: 3), 83017 (weight: 9), 93018 (weight: 4).
+ The question is: Does a path exist from node 83017 to node 15398? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 80340, 15606, 19967, 17466, 30676, 44294, 8414, 11175, 71637, 29569, 50452, 63632, 71232, 29438, and 56494.
+In this graph:
+Node 71232 is connected to nodes 19967 (weight: 5), 30676 (weight: 2), 44294 (weight: 8), 63632 (weight: 1), 56494 (weight: 7).
+Node 17466 is connected to nodes 29569 (weight: 8), 29438 (weight: 4), 71637 (weight: 8).
+Node 29569 is connected to nodes 80340 (weight: 5), 17466 (weight: 8), 11175 (weight: 3), 71637 (weight: 8), 29438 (weight: 5), 50452 (weight: 6).
+Node 80340 is connected to nodes 11175 (weight: 5), 29569 (weight: 5), 50452 (weight: 2).
+Node 15606 is connected to nodes 56494 (weight: 9).
+Node 63632 is connected to nodes 8414 (weight: 2), 56494 (weight: 2), 71232 (weight: 1).
+Node 8414 is connected to nodes 19967 (weight: 4), 30676 (weight: 2), 44294 (weight: 1), 63632 (weight: 2).
+Node 44294 is connected to nodes 19967 (weight: 5), 30676 (weight: 2), 8414 (weight: 1), 71232 (weight: 8).
+Node 19967 is connected to nodes 8414 (weight: 4), 71232 (weight: 5), 30676 (weight: 5), 56494 (weight: 2), 44294 (weight: 5).
+Node 11175 is connected to nodes 80340 (weight: 5), 71637 (weight: 6), 50452 (weight: 9), 29569 (weight: 3).
+Node 29438 is connected to nodes 17466 (weight: 4), 71637 (weight: 7), 29569 (weight: 5), 50452 (weight: 8).
+Node 56494 is connected to nodes 15606 (weight: 9), 19967 (weight: 2), 63632 (weight: 2), 71232 (weight: 7).
+Node 71637 is connected to nodes 17466 (weight: 8), 11175 (weight: 6), 29569 (weight: 8), 29438 (weight: 7), 50452 (weight: 1).
+Node 30676 is connected to nodes 19967 (weight: 5), 71232 (weight: 2), 44294 (weight: 2), 8414 (weight: 2).
+Node 50452 is connected to nodes 80340 (weight: 2), 11175 (weight: 9), 71637 (weight: 1), 29569 (weight: 6), 29438 (weight: 8).
+ The question is: Does a path exist from node 15606 to node 80340? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among 89482, 6607, 28543, 74517, 23932, 35024, 33710, 45489, 17429, 72040, 30305, 85581, and 63835.
+In this graph:
+Node 30305 is connected to nodes 6607 (weight: 2), 17429 (weight: 6), 63835 (weight: 6).
+Node 33710 is connected to nodes 89482 (weight: 2), 23932 (weight: 3), 72040 (weight: 9), 45489 (weight: 5), 85581 (weight: 6).
+Node 17429 is connected to nodes 23932 (weight: 2), 45489 (weight: 1), 85581 (weight: 3), 72040 (weight: 4), 30305 (weight: 6), 63835 (weight: 3).
+Node 74517 is connected to nodes 89482 (weight: 9), 28543 (weight: 5).
+Node 72040 is connected to nodes 89482 (weight: 9), 28543 (weight: 2), 23932 (weight: 1), 33710 (weight: 9), 45489 (weight: 9), 17429 (weight: 4).
+Node 45489 is connected to nodes 28543 (weight: 5), 33710 (weight: 5), 72040 (weight: 9), 85581 (weight: 3), 17429 (weight: 1).
+Node 35024 is connected to nodes 23932 (weight: 2), 85581 (weight: 1).
+Node 28543 is connected to nodes 89482 (weight: 4), 45489 (weight: 5), 74517 (weight: 5), 85581 (weight: 9), 72040 (weight: 2).
+Node 23932 is connected to nodes 63835 (weight: 1), 35024 (weight: 2), 72040 (weight: 1), 17429 (weight: 2), 85581 (weight: 9), 33710 (weight: 3).
+Node 89482 is connected to nodes 6607 (weight: 1), 74517 (weight: 9), 28543 (weight: 4), 33710 (weight: 2), 72040 (weight: 9).
+Node 63835 is connected to nodes 23932 (weight: 1), 17429 (weight: 3), 30305 (weight: 6).
+Node 85581 is connected to nodes 6607 (weight: 7), 28543 (weight: 9), 23932 (weight: 9), 35024 (weight: 1), 33710 (weight: 6), 45489 (weight: 3), 17429 (weight: 3).
+Node 6607 is connected to nodes 89482 (weight: 1), 30305 (weight: 2), 85581 (weight: 7).
+ The question is: Does a path exist from node 74517 to node 63835? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 74517 -> Node 28543 -> Node 72040 -> Node 23932 -> Node 63835
+

@@ -1,0 +1,116 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among IRZJE, DWYQV, TYORE, ENZZS, ORDMS, GQNSJ, CFLFE, SJINF, NWZPR, HSLVT, OBCFN, JCCTZ, HRGUT, KAAZD, and KLNQF.
+In this graph:
+Node CFLFE is connected to nodes IRZJE, ENZZS, GQNSJ, JCCTZ, SJINF, OBCFN, KAAZD, HRGUT.
+Node KAAZD is connected to nodes IRZJE, ENZZS, GQNSJ, CFLFE, SJINF, OBCFN, JCCTZ, KLNQF.
+Node NWZPR is connected to nodes OBCFN.
+Node GQNSJ is connected to nodes IRZJE, ENZZS, JCCTZ, SJINF, CFLFE, KAAZD, OBCFN.
+Node IRZJE is connected to nodes JCCTZ, SJINF, CFLFE, KAAZD, OBCFN, ENZZS, GQNSJ.
+Node ORDMS is connected to nodes TYORE, HRGUT.
+Node OBCFN is connected to nodes IRZJE, ENZZS, GQNSJ, CFLFE, SJINF, NWZPR, JCCTZ, KAAZD.
+Node ENZZS is connected to nodes IRZJE, JCCTZ, SJINF, CFLFE, KAAZD, OBCFN, GQNSJ, HRGUT.
+Node JCCTZ is connected to nodes IRZJE, ENZZS, GQNSJ, CFLFE, SJINF, OBCFN, KAAZD.
+Node KLNQF is connected to nodes KAAZD.
+Node TYORE is connected to nodes ORDMS.
+Node SJINF is connected to nodes IRZJE, ENZZS, GQNSJ, CFLFE, JCCTZ, OBCFN, KAAZD.
+Node HRGUT is connected to nodes ENZZS, ORDMS, CFLFE.
+ The question is: Is there a path between Node NWZPR and TYORE Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among VASOI, KLBKF, GZUVI, VGGLR, VPJZG, JCLDE, SBXVR, KDXNC, TUWKX, HXITL, VSPSP, OTPNJ, and METOQ.
+In this graph:
+Node KLBKF is connected to nodes VASOI, GZUVI, HXITL, VPJZG, JCLDE, OTPNJ.
+Node SBXVR is connected to nodes JCLDE, KDXNC, METOQ, VSPSP, TUWKX.
+Node METOQ is connected to nodes VASOI, JCLDE, SBXVR, KDXNC, TUWKX, OTPNJ.
+Node HXITL is connected to nodes VASOI, KLBKF, TUWKX, VSPSP.
+Node VGGLR is connected to nodes GZUVI, VPJZG, VSPSP, JCLDE.
+Node TUWKX is connected to nodes SBXVR, KDXNC, HXITL, METOQ, VSPSP.
+Node KDXNC is connected to nodes JCLDE, SBXVR, TUWKX, OTPNJ, VSPSP, METOQ.
+Node JCLDE is connected to nodes KLBKF, VGGLR, VPJZG, SBXVR, KDXNC, VSPSP, METOQ.
+Node OTPNJ is connected to nodes VASOI, KLBKF, GZUVI, VPJZG, KDXNC, VSPSP, METOQ.
+Node VSPSP is connected to nodes VASOI, GZUVI, VGGLR, VPJZG, JCLDE, SBXVR, KDXNC, TUWKX, HXITL, OTPNJ.
+Node VASOI is connected to nodes KLBKF, OTPNJ, VSPSP, HXITL, VPJZG, METOQ.
+Node VPJZG is connected to nodes VASOI, KLBKF, VGGLR, JCLDE, OTPNJ, VSPSP.
+Node GZUVI is connected to nodes KLBKF, VGGLR, VSPSP, OTPNJ.
+ The question is: Is there a path between Node VASOI and JCLDE Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among NWPLY, JAHWD, FPZUS, MRLQR, DTNWP, SNEXN, NOPYF, IWATS, HCRHA, GHZGU, RKZTT, PJYAZ, and FXOGD.
+In this graph:
+Node NOPYF is connected to nodes PJYAZ.
+Node IWATS is connected to nodes HCRHA.
+Node PJYAZ is connected to nodes NOPYF.
+Node HCRHA is connected to nodes IWATS.
+ The question is: Is there a path between Node HCRHA and PJYAZ Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is No.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among GACOK, TJQIM, RLDIW, CUALU, YSMUK, YXTYG, PBTML, THFLK, YWOGV, WASWM, MVSTM, and NUPFB.
+In this graph:
+Node CUALU is connected to nodes TJQIM, RLDIW, YSMUK, NUPFB, YWOGV, THFLK, PBTML.
+Node YWOGV is connected to nodes GACOK, TJQIM, CUALU, YSMUK, YXTYG, THFLK, WASWM, NUPFB, MVSTM.
+Node YSMUK is connected to nodes TJQIM, CUALU, YXTYG, PBTML, YWOGV.
+Node THFLK is connected to nodes CUALU, YXTYG, PBTML, YWOGV.
+Node PBTML is connected to nodes GACOK, TJQIM, CUALU, YSMUK, YXTYG, THFLK.
+Node YXTYG is connected to nodes YSMUK, PBTML, YWOGV, THFLK, NUPFB.
+Node NUPFB is connected to nodes CUALU, YXTYG, YWOGV, MVSTM.
+Node WASWM is connected to nodes GACOK, YWOGV, MVSTM.
+Node GACOK is connected to nodes TJQIM, WASWM, YWOGV, PBTML.
+Node RLDIW is connected to nodes TJQIM, CUALU.
+Node TJQIM is connected to nodes GACOK, RLDIW, MVSTM, PBTML, YWOGV, CUALU, YSMUK.
+Node MVSTM is connected to nodes TJQIM, YWOGV, WASWM, NUPFB.
+ The question is: Is there a path between Node RLDIW and YXTYG Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among LMQSP, MLDYJ, EPEBH, MEKSI, ELCUI, VNEQF, VWZIZ, FAMUW, LAJJT, DGEXI, UIJIE, HBEHB, DJVCY, PPGFW, and ZHDEG.
+In this graph:
+Node DJVCY is connected to nodes LMQSP, MLDYJ, EPEBH, MEKSI, ELCUI, VNEQF, LAJJT, UIJIE, HBEHB, PPGFW.
+Node FAMUW is connected to nodes MEKSI, ELCUI, VNEQF, VWZIZ, UIJIE.
+Node HBEHB is connected to nodes VNEQF, LAJJT, UIJIE, DJVCY.
+Node LAJJT is connected to nodes MEKSI, PPGFW, DJVCY, DGEXI, HBEHB.
+Node ELCUI is connected to nodes LMQSP, MLDYJ, EPEBH, MEKSI, UIJIE, VNEQF, DJVCY, PPGFW, FAMUW.
+Node DGEXI is connected to nodes MLDYJ, EPEBH, LAJJT, PPGFW.
+Node MLDYJ is connected to nodes LMQSP, UIJIE, VNEQF, DJVCY, MEKSI, PPGFW, EPEBH, ELCUI, DGEXI, ZHDEG.
+Node VWZIZ is connected to nodes FAMUW.
+Node PPGFW is connected to nodes LMQSP, MLDYJ, EPEBH, MEKSI, ELCUI, VNEQF, LAJJT, DGEXI, UIJIE, DJVCY.
+Node LMQSP is connected to nodes UIJIE, VNEQF, DJVCY, PPGFW, MEKSI, ELCUI, EPEBH, MLDYJ.
+Node ZHDEG is connected to nodes MLDYJ, MEKSI.
+Node UIJIE is connected to nodes LMQSP, MLDYJ, EPEBH, MEKSI, ELCUI, VNEQF, FAMUW, PPGFW, DJVCY, HBEHB.
+Node EPEBH is connected to nodes LMQSP, MLDYJ, UIJIE, VNEQF, DJVCY, MEKSI, PPGFW, ELCUI, DGEXI.
+Node VNEQF is connected to nodes LMQSP, MLDYJ, EPEBH, MEKSI, ELCUI, UIJIE, PPGFW, DJVCY, FAMUW, HBEHB.
+Node MEKSI is connected to nodes LMQSP, MLDYJ, EPEBH, UIJIE, VNEQF, DJVCY, ELCUI, PPGFW, FAMUW, ZHDEG, LAJJT.
+ The question is: Is there a path between Node VWZIZ and DGEXI Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among HXNYD, GHASR, CZIQD, LFLDK, JRVLY, YCICW, EYQEZ, ESIJG, HLHPP, and SOGPH.
+In this graph:
+Node HXNYD is connected to nodes LFLDK, ESIJG, CZIQD.
+Node HLHPP is connected to nodes CZIQD.
+Node SOGPH is connected to nodes LFLDK, JRVLY, YCICW.
+Node EYQEZ is connected to nodes GHASR.
+Node JRVLY is connected to nodes SOGPH, YCICW.
+Node ESIJG is connected to nodes HXNYD, GHASR.
+Node LFLDK is connected to nodes HXNYD, SOGPH, YCICW.
+Node CZIQD is connected to nodes HXNYD, HLHPP.
+Node YCICW is connected to nodes LFLDK, JRVLY, SOGPH.
+Node GHASR is connected to nodes EYQEZ, ESIJG.
+ The question is: Is there a path between Node EYQEZ and JRVLY Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among DDTWH, QSZND, YOHDK, ZNPGU, and AIGYG.
+In this graph:
+Node AIGYG is connected to nodes QSZND, YOHDK, ZNPGU.
+Node QSZND is connected to nodes DDTWH, YOHDK, AIGYG, ZNPGU.
+Node YOHDK is connected to nodes QSZND, ZNPGU, AIGYG.
+Node DDTWH is connected to nodes QSZND, ZNPGU.
+Node ZNPGU is connected to nodes DDTWH, QSZND, YOHDK, AIGYG.
+ The question is: Is there a path between Node DDTWH and QSZND Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is Yes.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among UFNKJ, FGWQN, LMQFK, GXQYY, OLIBT, YVEOZ, FPVVS, and APWSH.
+In this graph:
+Node UFNKJ is connected to nodes FGWQN.
+Node LMQFK is connected to nodes FGWQN, GXQYY.
+Node GXQYY is connected to nodes LMQFK.
+Node FGWQN is connected to nodes UFNKJ, LMQFK.
+ The question is: Is there a path between Node APWSH and FPVVS Choose from the following answers ["Yes","No"] in the form of "The answer is Yes"  or  "The answer is No".                                                                                                              
+A: The answer is No.
+

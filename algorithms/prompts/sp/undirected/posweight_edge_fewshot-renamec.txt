@@ -1,0 +1,331 @@
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node PXILZ, XFBZR, IRHBN, YWBVC, NNVNI, ETUSJ, HFFTA, IXTLO, VZIGT, WCIVQ, OLIEC, RWTWQ, and BUQCU.
+Node PXILZ is connected to Node XFBZR with weight 1.
+Node PXILZ is connected to Node HFFTA with weight 7.
+Node PXILZ is connected to Node IRHBN with weight 3.
+Node PXILZ is connected to Node BUQCU with weight 6.
+Node PXILZ is connected to Node YWBVC with weight 3.
+Node PXILZ is connected to Node NNVNI with weight 8.
+Node XFBZR is connected to Node IRHBN with weight 5.
+Node XFBZR is connected to Node NNVNI with weight 5.
+Node XFBZR is connected to Node IXTLO with weight 5.
+Node XFBZR is connected to Node BUQCU with weight 6.
+Node IRHBN is connected to Node YWBVC with weight 8.
+Node YWBVC is connected to Node NNVNI with weight 7.
+Node YWBVC is connected to Node OLIEC with weight 9.
+Node YWBVC is connected to Node BUQCU with weight 8.
+Node YWBVC is connected to Node HFFTA with weight 5.
+Node NNVNI is connected to Node ETUSJ with weight 4.
+Node NNVNI is connected to Node RWTWQ with weight 5.
+Node NNVNI is connected to Node HFFTA with weight 6.
+Node NNVNI is connected to Node OLIEC with weight 6.
+Node ETUSJ is connected to Node HFFTA with weight 1.
+Node ETUSJ is connected to Node RWTWQ with weight 2.
+Node ETUSJ is connected to Node VZIGT with weight 2.
+Node HFFTA is connected to Node IXTLO with weight 7.
+Node HFFTA is connected to Node BUQCU with weight 2.
+Node HFFTA is connected to Node RWTWQ with weight 3.
+Node IXTLO is connected to Node VZIGT with weight 6.
+Node IXTLO is connected to Node BUQCU with weight 5.
+Node VZIGT is connected to Node WCIVQ with weight 1.
+Node VZIGT is connected to Node BUQCU with weight 2.
+Node WCIVQ is connected to Node OLIEC with weight 6.
+Node WCIVQ is connected to Node BUQCU with weight 5.
+Node OLIEC is connected to Node RWTWQ with weight 1.
+Node OLIEC is connected to Node BUQCU with weight 7.
+Node RWTWQ is connected to Node BUQCU with weight 3.
+ The question is: Does a path exist from node VZIGT to node ETUSJ? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node VZIGT -> Node ETUSJ
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node MPVCY, PWBFE, SDEAW, TMPSC, LOLTX, OEWEZ, EUUPH, XKUAY, FFYBA, UEJDX, TCJNM, JFZXW, DSTDI, and YLRSS.
+Node MPVCY is connected to Node PWBFE with weight 9.
+Node PWBFE is connected to Node SDEAW with weight 5.
+Node SDEAW is connected to Node TMPSC with weight 2.
+Node TMPSC is connected to Node LOLTX with weight 3.
+Node LOLTX is connected to Node OEWEZ with weight 2.
+Node OEWEZ is connected to Node EUUPH with weight 4.
+Node EUUPH is connected to Node XKUAY with weight 3.
+Node EUUPH is connected to Node YLRSS with weight 6.
+Node XKUAY is connected to Node FFYBA with weight 3.
+Node FFYBA is connected to Node UEJDX with weight 7.
+Node UEJDX is connected to Node TCJNM with weight 7.
+Node TCJNM is connected to Node JFZXW with weight 4.
+Node JFZXW is connected to Node DSTDI with weight 3.
+Node DSTDI is connected to Node YLRSS with weight 6.
+ The question is: Does a path exist from node JFZXW to node LOLTX? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node JFZXW -> Node DSTDI -> Node YLRSS -> Node EUUPH -> Node OEWEZ -> Node LOLTX
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node DUMSS, ZZFWO, REUHL, EIYDV, VKTJM, TSCBN, FZPOA, ZPHOZ, WNPXU, KNNYO, SWLUC, FTLOK, and YLGBX.
+Node DUMSS is connected to Node SWLUC with weight 2.
+Node DUMSS is connected to Node WNPXU with weight 8.
+Node DUMSS is connected to Node VKTJM with weight 3.
+Node ZZFWO is connected to Node ZPHOZ with weight 2.
+Node ZZFWO is connected to Node REUHL with weight 2.
+Node ZZFWO is connected to Node KNNYO with weight 5.
+Node REUHL is connected to Node ZPHOZ with weight 3.
+Node REUHL is connected to Node KNNYO with weight 3.
+Node REUHL is connected to Node EIYDV with weight 4.
+Node EIYDV is connected to Node KNNYO with weight 1.
+Node EIYDV is connected to Node ZPHOZ with weight 3.
+Node VKTJM is connected to Node WNPXU with weight 9.
+Node VKTJM is connected to Node TSCBN with weight 9.
+Node TSCBN is connected to Node FTLOK with weight 7.
+Node TSCBN is connected to Node SWLUC with weight 4.
+Node FZPOA is connected to Node FTLOK with weight 1.
+Node ZPHOZ is connected to Node KNNYO with weight 1.
+Node WNPXU is connected to Node SWLUC with weight 5.
+ The question is: Does a path exist from node FTLOK to node EIYDV? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node TZAOU, KCREF, UPBJQ, EDGRG, QWEUU, EEGZG, LGQFI, WMGBE, LLCEX, QQPVC, INIZR, BAZXY, and ISBVH.
+Node TZAOU is connected to Node ISBVH with weight 8.
+Node TZAOU is connected to Node EDGRG with weight 7.
+Node TZAOU is connected to Node LLCEX with weight 9.
+Node TZAOU is connected to Node UPBJQ with weight 6.
+Node KCREF is connected to Node EDGRG with weight 8.
+Node UPBJQ is connected to Node WMGBE with weight 9.
+Node UPBJQ is connected to Node LLCEX with weight 6.
+Node UPBJQ is connected to Node EDGRG with weight 2.
+Node UPBJQ is connected to Node LGQFI with weight 3.
+Node EDGRG is connected to Node ISBVH with weight 2.
+Node QWEUU is connected to Node EEGZG with weight 3.
+Node QWEUU is connected to Node INIZR with weight 9.
+Node QWEUU is connected to Node LLCEX with weight 7.
+Node EEGZG is connected to Node QQPVC with weight 4.
+Node EEGZG is connected to Node BAZXY with weight 9.
+Node LGQFI is connected to Node WMGBE with weight 2.
+Node LGQFI is connected to Node INIZR with weight 5.
+Node LGQFI is connected to Node QQPVC with weight 2.
+Node WMGBE is connected to Node INIZR with weight 1.
+Node WMGBE is connected to Node LLCEX with weight 3.
+ The question is: Does a path exist from node BAZXY to node KCREF? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node BAZXY -> Node EEGZG -> Node QQPVC -> Node LGQFI -> Node UPBJQ -> Node EDGRG -> Node KCREF
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node BVTWA, SCWPS, EOPNP, PHEKH, CFAFS, QEFYG, OZHBD, LNBES, WBRII, MQTBU, SOYAN, NEEGF, and TXQNZ.
+Node BVTWA is connected to Node MQTBU with weight 6.
+Node BVTWA is connected to Node CFAFS with weight 5.
+Node BVTWA is connected to Node SCWPS with weight 8.
+Node BVTWA is connected to Node PHEKH with weight 9.
+Node BVTWA is connected to Node OZHBD with weight 3.
+Node BVTWA is connected to Node WBRII with weight 3.
+Node BVTWA is connected to Node TXQNZ with weight 1.
+Node SCWPS is connected to Node WBRII with weight 9.
+Node SCWPS is connected to Node OZHBD with weight 9.
+Node SCWPS is connected to Node LNBES with weight 5.
+Node SCWPS is connected to Node QEFYG with weight 8.
+Node SCWPS is connected to Node NEEGF with weight 7.
+Node SCWPS is connected to Node TXQNZ with weight 1.
+Node PHEKH is connected to Node WBRII with weight 8.
+Node PHEKH is connected to Node OZHBD with weight 9.
+Node PHEKH is connected to Node CFAFS with weight 2.
+Node PHEKH is connected to Node LNBES with weight 7.
+Node PHEKH is connected to Node TXQNZ with weight 6.
+Node PHEKH is connected to Node QEFYG with weight 4.
+Node PHEKH is connected to Node SOYAN with weight 7.
+Node PHEKH is connected to Node MQTBU with weight 5.
+Node PHEKH is connected to Node NEEGF with weight 8.
+Node CFAFS is connected to Node WBRII with weight 3.
+Node CFAFS is connected to Node OZHBD with weight 8.
+Node CFAFS is connected to Node LNBES with weight 2.
+Node CFAFS is connected to Node QEFYG with weight 4.
+Node CFAFS is connected to Node MQTBU with weight 6.
+Node CFAFS is connected to Node NEEGF with weight 8.
+Node CFAFS is connected to Node TXQNZ with weight 1.
+Node QEFYG is connected to Node WBRII with weight 8.
+Node QEFYG is connected to Node OZHBD with weight 9.
+Node QEFYG is connected to Node LNBES with weight 5.
+Node QEFYG is connected to Node SOYAN with weight 7.
+Node QEFYG is connected to Node MQTBU with weight 8.
+Node QEFYG is connected to Node NEEGF with weight 7.
+Node OZHBD is connected to Node WBRII with weight 6.
+Node OZHBD is connected to Node MQTBU with weight 4.
+Node OZHBD is connected to Node TXQNZ with weight 1.
+Node OZHBD is connected to Node NEEGF with weight 6.
+Node LNBES is connected to Node WBRII with weight 8.
+Node LNBES is connected to Node MQTBU with weight 2.
+Node LNBES is connected to Node TXQNZ with weight 9.
+Node WBRII is connected to Node SOYAN with weight 7.
+Node WBRII is connected to Node NEEGF with weight 9.
+Node WBRII is connected to Node TXQNZ with weight 8.
+Node WBRII is connected to Node MQTBU with weight 9.
+Node MQTBU is connected to Node NEEGF with weight 8.
+Node MQTBU is connected to Node SOYAN with weight 6.
+Node SOYAN is connected to Node TXQNZ with weight 8.
+Node SOYAN is connected to Node NEEGF with weight 7.
+ The question is: Does a path exist from node EOPNP to node OZHBD? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node GASHF, SHKJZ, WBCBD, ZIBGM, OQFDR, JMXGO, RJXVY, MWFIQ, QVSVY, IAFKO, JEHJA, DUSAM, and KIQXR.
+Node GASHF is connected to Node SHKJZ with weight 7.
+Node GASHF is connected to Node ZIBGM with weight 5.
+Node GASHF is connected to Node KIQXR with weight 5.
+Node GASHF is connected to Node IAFKO with weight 4.
+Node GASHF is connected to Node JEHJA with weight 3.
+Node GASHF is connected to Node RJXVY with weight 5.
+Node GASHF is connected to Node DUSAM with weight 6.
+Node GASHF is connected to Node OQFDR with weight 7.
+Node GASHF is connected to Node JMXGO with weight 7.
+Node GASHF is connected to Node WBCBD with weight 5.
+Node GASHF is connected to Node MWFIQ with weight 4.
+Node GASHF is connected to Node QVSVY with weight 1.
+Node SHKJZ is connected to Node WBCBD with weight 9.
+Node SHKJZ is connected to Node JMXGO with weight 8.
+Node SHKJZ is connected to Node MWFIQ with weight 6.
+Node SHKJZ is connected to Node KIQXR with weight 9.
+Node SHKJZ is connected to Node OQFDR with weight 7.
+Node SHKJZ is connected to Node DUSAM with weight 6.
+Node SHKJZ is connected to Node QVSVY with weight 5.
+Node SHKJZ is connected to Node ZIBGM with weight 6.
+Node SHKJZ is connected to Node RJXVY with weight 4.
+Node SHKJZ is connected to Node IAFKO with weight 4.
+Node SHKJZ is connected to Node JEHJA with weight 4.
+Node WBCBD is connected to Node ZIBGM with weight 7.
+Node WBCBD is connected to Node MWFIQ with weight 7.
+Node WBCBD is connected to Node KIQXR with weight 4.
+Node WBCBD is connected to Node OQFDR with weight 2.
+Node WBCBD is connected to Node RJXVY with weight 4.
+Node WBCBD is connected to Node IAFKO with weight 5.
+Node WBCBD is connected to Node DUSAM with weight 7.
+Node WBCBD is connected to Node JEHJA with weight 5.
+Node WBCBD is connected to Node JMXGO with weight 5.
+Node WBCBD is connected to Node QVSVY with weight 2.
+Node ZIBGM is connected to Node OQFDR with weight 5.
+Node ZIBGM is connected to Node IAFKO with weight 7.
+Node ZIBGM is connected to Node QVSVY with weight 9.
+Node ZIBGM is connected to Node DUSAM with weight 4.
+Node ZIBGM is connected to Node KIQXR with weight 9.
+Node ZIBGM is connected to Node RJXVY with weight 8.
+Node ZIBGM is connected to Node JEHJA with weight 7.
+Node ZIBGM is connected to Node JMXGO with weight 7.
+Node ZIBGM is connected to Node MWFIQ with weight 4.
+Node OQFDR is connected to Node JMXGO with weight 6.
+Node OQFDR is connected to Node KIQXR with weight 8.
+Node OQFDR is connected to Node DUSAM with weight 8.
+Node OQFDR is connected to Node QVSVY with weight 5.
+Node OQFDR is connected to Node MWFIQ with weight 9.
+Node OQFDR is connected to Node RJXVY with weight 1.
+Node OQFDR is connected to Node JEHJA with weight 2.
+Node OQFDR is connected to Node IAFKO with weight 4.
+Node JMXGO is connected to Node RJXVY with weight 5.
+Node JMXGO is connected to Node QVSVY with weight 2.
+Node JMXGO is connected to Node IAFKO with weight 4.
+Node JMXGO is connected to Node MWFIQ with weight 6.
+Node JMXGO is connected to Node KIQXR with weight 5.
+Node JMXGO is connected to Node DUSAM with weight 8.
+Node JMXGO is connected to Node JEHJA with weight 6.
+Node RJXVY is connected to Node MWFIQ with weight 8.
+Node RJXVY is connected to Node IAFKO with weight 2.
+Node RJXVY is connected to Node JEHJA with weight 3.
+Node RJXVY is connected to Node KIQXR with weight 3.
+Node RJXVY is connected to Node DUSAM with weight 8.
+Node MWFIQ is connected to Node QVSVY with weight 8.
+Node MWFIQ is connected to Node KIQXR with weight 9.
+Node MWFIQ is connected to Node IAFKO with weight 8.
+Node MWFIQ is connected to Node JEHJA with weight 9.
+Node MWFIQ is connected to Node DUSAM with weight 1.
+Node QVSVY is connected to Node IAFKO with weight 2.
+Node QVSVY is connected to Node KIQXR with weight 2.
+Node QVSVY is connected to Node JEHJA with weight 1.
+Node QVSVY is connected to Node DUSAM with weight 2.
+Node IAFKO is connected to Node JEHJA with weight 6.
+Node IAFKO is connected to Node KIQXR with weight 7.
+Node IAFKO is connected to Node DUSAM with weight 2.
+Node JEHJA is connected to Node DUSAM with weight 9.
+Node JEHJA is connected to Node KIQXR with weight 3.
+Node DUSAM is connected to Node KIQXR with weight 2.
+ The question is: Does a path exist from node RJXVY to node QVSVY? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node RJXVY -> Node IAFKO -> Node QVSVY
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node FOFEW, SOFJI, GAQHF, RSBZN, HVIBR, PKPVF, NCXIH, IVVZL, IKCUQ, SEYIV, WIFVO, OOFQF, XPLZJ, KEGNP, and VSGRI.
+Node FOFEW is connected to Node SOFJI with weight 8.
+Node FOFEW is connected to Node NCXIH with weight 9.
+Node FOFEW is connected to Node IKCUQ with weight 6.
+Node SOFJI is connected to Node GAQHF with weight 8.
+Node SOFJI is connected to Node HVIBR with weight 5.
+Node SOFJI is connected to Node OOFQF with weight 8.
+Node SOFJI is connected to Node NCXIH with weight 3.
+Node GAQHF is connected to Node RSBZN with weight 6.
+Node RSBZN is connected to Node HVIBR with weight 3.
+Node RSBZN is connected to Node KEGNP with weight 9.
+Node HVIBR is connected to Node PKPVF with weight 1.
+Node HVIBR is connected to Node OOFQF with weight 3.
+Node PKPVF is connected to Node NCXIH with weight 2.
+Node PKPVF is connected to Node IVVZL with weight 1.
+Node PKPVF is connected to Node VSGRI with weight 9.
+Node NCXIH is connected to Node IVVZL with weight 2.
+Node NCXIH is connected to Node KEGNP with weight 2.
+Node IVVZL is connected to Node IKCUQ with weight 1.
+Node IKCUQ is connected to Node SEYIV with weight 3.
+Node SEYIV is connected to Node WIFVO with weight 6.
+Node WIFVO is connected to Node OOFQF with weight 3.
+Node OOFQF is connected to Node XPLZJ with weight 2.
+Node XPLZJ is connected to Node KEGNP with weight 5.
+Node KEGNP is connected to Node VSGRI with weight 8.
+ The question is: Does a path exist from node SEYIV to node KEGNP? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node SEYIV -> Node IKCUQ -> Node IVVZL -> Node NCXIH -> Node KEGNP
+
+Q: Determine if there is a path between two nodes in the graph. The graph is: G describes an undirected graph among node XYPFZ, HTZYY, ZCYYE, WMKBV, IRKDC, ZOVJT, FGQLM, CUROF, KJMGT, LDWPK, OTQVJ, PCMZB, JFYSA, and TBSYX.
+Node XYPFZ is connected to Node FGQLM with weight 1.
+Node XYPFZ is connected to Node CUROF with weight 5.
+Node XYPFZ is connected to Node ZOVJT with weight 1.
+Node XYPFZ is connected to Node PCMZB with weight 1.
+Node XYPFZ is connected to Node WMKBV with weight 5.
+Node XYPFZ is connected to Node LDWPK with weight 3.
+Node XYPFZ is connected to Node OTQVJ with weight 8.
+Node XYPFZ is connected to Node ZCYYE with weight 6.
+Node XYPFZ is connected to Node JFYSA with weight 8.
+Node XYPFZ is connected to Node IRKDC with weight 4.
+Node HTZYY is connected to Node FGQLM with weight 4.
+Node HTZYY is connected to Node IRKDC with weight 7.
+Node ZCYYE is connected to Node FGQLM with weight 1.
+Node ZCYYE is connected to Node CUROF with weight 3.
+Node ZCYYE is connected to Node ZOVJT with weight 7.
+Node ZCYYE is connected to Node PCMZB with weight 5.
+Node ZCYYE is connected to Node WMKBV with weight 5.
+Node ZCYYE is connected to Node IRKDC with weight 9.
+Node ZCYYE is connected to Node JFYSA with weight 2.
+Node ZCYYE is connected to Node LDWPK with weight 6.
+Node ZCYYE is connected to Node OTQVJ with weight 4.
+Node WMKBV is connected to Node FGQLM with weight 8.
+Node WMKBV is connected to Node CUROF with weight 8.
+Node WMKBV is connected to Node ZOVJT with weight 7.
+Node WMKBV is connected to Node PCMZB with weight 7.
+Node WMKBV is connected to Node OTQVJ with weight 4.
+Node WMKBV is connected to Node IRKDC with weight 8.
+Node WMKBV is connected to Node JFYSA with weight 1.
+Node WMKBV is connected to Node LDWPK with weight 8.
+Node IRKDC is connected to Node FGQLM with weight 6.
+Node IRKDC is connected to Node CUROF with weight 7.
+Node IRKDC is connected to Node ZOVJT with weight 3.
+Node IRKDC is connected to Node PCMZB with weight 9.
+Node IRKDC is connected to Node OTQVJ with weight 4.
+Node IRKDC is connected to Node LDWPK with weight 3.
+Node IRKDC is connected to Node JFYSA with weight 7.
+Node ZOVJT is connected to Node FGQLM with weight 4.
+Node ZOVJT is connected to Node CUROF with weight 3.
+Node ZOVJT is connected to Node OTQVJ with weight 9.
+Node ZOVJT is connected to Node PCMZB with weight 3.
+Node ZOVJT is connected to Node JFYSA with weight 7.
+Node ZOVJT is connected to Node LDWPK with weight 7.
+Node ZOVJT is connected to Node TBSYX with weight 6.
+Node FGQLM is connected to Node LDWPK with weight 2.
+Node FGQLM is connected to Node PCMZB with weight 9.
+Node FGQLM is connected to Node OTQVJ with weight 8.
+Node FGQLM is connected to Node CUROF with weight 7.
+Node FGQLM is connected to Node JFYSA with weight 1.
+Node FGQLM is connected to Node KJMGT with weight 1.
+Node CUROF is connected to Node PCMZB with weight 5.
+Node CUROF is connected to Node OTQVJ with weight 1.
+Node CUROF is connected to Node LDWPK with weight 4.
+Node CUROF is connected to Node JFYSA with weight 4.
+Node KJMGT is connected to Node LDWPK with weight 4.
+Node KJMGT is connected to Node JFYSA with weight 9.
+Node LDWPK is connected to Node PCMZB with weight 9.
+Node LDWPK is connected to Node OTQVJ with weight 8.
+Node LDWPK is connected to Node JFYSA with weight 3.
+Node LDWPK is connected to Node TBSYX with weight 8.
+Node OTQVJ is connected to Node PCMZB with weight 7.
+Node OTQVJ is connected to Node JFYSA with weight 8.
+Node PCMZB is connected to Node JFYSA with weight 8.
+ The question is: Does a path exist from node HTZYY to node TBSYX? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node HTZYY -> Node FGQLM -> Node XYPFZ -> Node ZOVJT -> Node TBSYX
+

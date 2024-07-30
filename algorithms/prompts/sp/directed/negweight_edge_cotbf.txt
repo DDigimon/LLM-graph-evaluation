@@ -1,0 +1,493 @@
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, and 5.
+Node 0 is directed to Node 2 with weight 8.
+Node 0 is directed to Node 1 with weight 9.
+Node 1 is directed to Node 0 with weight 7.
+Node 1 is directed to Node 3 with weight 8.
+Node 1 is directed to Node 2 with weight 1.
+Node 1 is directed to Node 5 with weight 4.
+Node 2 is directed to Node 4 with weight 2.
+Node 2 is directed to Node 5 with weight 6.
+Node 2 is directed to Node 1 with weight 0.
+Node 3 is directed to Node 0 with weight -1.
+Node 3 is directed to Node 2 with weight -1.
+Node 3 is directed to Node 1 with weight -3.
+Node 3 is directed to Node 4 with weight 4.
+Node 4 is directed to Node 1 with weight 6.
+Node 4 is directed to Node 3 with weight 8.
+Node 4 is directed to Node 0 with weight 7.
+Node 5 is directed to Node 2 with weight 6.
+Node 5 is directed to Node 3 with weight 4.
+Node 5 is directed to Node 0 with weight 6.
+ Does a path exist from node 2 to node 0? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 2 to node 0 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 2 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (6 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 4 via 2: 0 + 2 = 2
+- Update distance to 5 via 2: 0 + 6 = 6
+- Update distance to 1 via 2: 0 + 0 = 0
+- Update distance to 3 via 4: 2 + 8 = 10
+- Update distance to 0 via 4: 2 + 7 = 9
+
+Iteration 2:
+- Update distance to 0 via 1: 0 + 7 = 7
+- Update distance to 3 via 1: 0 + 8 = 8
+- Update distance to 5 via 1: 0 + 4 = 4
+
+Iteration 3:
+- No update in a round, stop early.
+
+Therefore, there is a path from node 2 to node 0, and the shortest path is Node 2 -> Node 1 -> Node 0.
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.
+Node 0 is directed to Node 9 with weight 7.
+Node 0 is directed to Node 3 with weight -1.
+Node 0 is directed to Node 8 with weight -1.
+Node 1 is directed to Node 9 with weight 7.
+Node 1 is directed to Node 7 with weight -3.
+Node 2 is directed to Node 0 with weight -3.
+Node 2 is directed to Node 8 with weight -2.
+Node 3 is directed to Node 11 with weight 9.
+Node 4 is directed to Node 3 with weight 6.
+Node 4 is directed to Node 10 with weight 5.
+Node 5 is directed to Node 7 with weight 5.
+Node 5 is directed to Node 9 with weight 6.
+Node 5 is directed to Node 2 with weight 5.
+Node 5 is directed to Node 4 with weight 2.
+Node 5 is directed to Node 0 with weight -1.
+Node 6 is directed to Node 0 with weight 6.
+Node 6 is directed to Node 8 with weight 4.
+Node 6 is directed to Node 7 with weight 6.
+Node 7 is directed to Node 2 with weight 0.
+Node 7 is directed to Node 3 with weight 3.
+Node 9 is directed to Node 3 with weight -1.
+Node 9 is directed to Node 8 with weight 9.
+Node 10 is directed to Node 8 with weight 6.
+Node 10 is directed to Node 3 with weight -1.
+Node 11 is directed to Node 12 with weight -1.
+Node 12 is directed to Node 9 with weight -3.
+Node 12 is directed to Node 1 with weight 6.
+ Does a path exist from node 13 to node 5? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 13 to node 5 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 13 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (14 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node 13 and node 5. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+Node 0 is directed to Node 3 with weight 5.
+Node 0 is directed to Node 8 with weight 3.
+Node 0 is directed to Node 7 with weight 5.
+Node 0 is directed to Node 4 with weight 8.
+Node 1 is directed to Node 6 with weight 7.
+Node 1 is directed to Node 0 with weight -1.
+Node 1 is directed to Node 4 with weight 5.
+Node 1 is directed to Node 2 with weight 6.
+Node 1 is directed to Node 5 with weight 9.
+Node 2 is directed to Node 7 with weight 9.
+Node 2 is directed to Node 4 with weight -3.
+Node 2 is directed to Node 8 with weight 3.
+Node 2 is directed to Node 1 with weight 5.
+Node 3 is directed to Node 6 with weight 3.
+Node 3 is directed to Node 8 with weight 2.
+Node 3 is directed to Node 2 with weight 7.
+Node 3 is directed to Node 4 with weight -3.
+Node 3 is directed to Node 7 with weight 1.
+Node 4 is directed to Node 7 with weight 3.
+Node 4 is directed to Node 9 with weight -3.
+Node 5 is directed to Node 7 with weight 3.
+Node 5 is directed to Node 1 with weight 1.
+Node 5 is directed to Node 4 with weight 4.
+Node 5 is directed to Node 2 with weight 8.
+Node 6 is directed to Node 7 with weight 3.
+Node 6 is directed to Node 4 with weight 3.
+Node 6 is directed to Node 1 with weight 2.
+Node 7 is directed to Node 8 with weight 1.
+Node 7 is directed to Node 9 with weight 6.
+Node 8 is directed to Node 9 with weight 9.
+Node 8 is directed to Node 2 with weight 8.
+ Does a path exist from node 4 to node 3? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 4 to node 3 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 4 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (10 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 7 via 4: 0 + 3 = 3
+- Update distance to 9 via 4: 0 + -3 = -3
+- Update distance to 8 via 7: 3 + 1 = 4
+- Update distance to 2 via 8: 4 + 8 = 12
+
+Iteration 2:
+- Update distance to 1 via 2: 12 + 5 = 17
+
+Iteration 3:
+- Update distance to 6 via 1: 17 + 7 = 24
+- Update distance to 0 via 1: 17 + -1 = 16
+- Update distance to 5 via 1: 17 + 9 = 26
+
+Iteration 4:
+- Update distance to 3 via 0: 16 + 5 = 21
+
+Iteration 5:
+- No update in a round, stop early.
+
+Therefore, there is a path from node 4 to node 3, and the shortest path is Node 4 -> Node 7 -> Node 8 -> Node 2 -> Node 1 -> Node 0 -> Node 3.
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+Node 0 is directed to Node 2 with weight 3.
+Node 1 is directed to Node 2 with weight 7.
+Node 2 is directed to Node 1 with weight 8.
+Node 2 is directed to Node 9 with weight 6.
+Node 3 is directed to Node 6 with weight -3.
+Node 4 is directed to Node 3 with weight 5.
+Node 5 is directed to Node 3 with weight 9.
+Node 5 is directed to Node 8 with weight 4.
+Node 5 is directed to Node 7 with weight 1.
+Node 6 is directed to Node 4 with weight 7.
+Node 7 is directed to Node 5 with weight 9.
+Node 9 is directed to Node 0 with weight 6.
+Node 9 is directed to Node 1 with weight 1.
+ Does a path exist from node 1 to node 7? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 1 to node 7 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 1 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (10 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 2 via 1: 0 + 7 = 7
+- Update distance to 9 via 2: 7 + 6 = 13
+- Update distance to 0 via 9: 13 + 6 = 19
+
+Iteration 2:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node 1 and node 7. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, and 7.
+Node 0 is directed to Node 7 with weight 0.
+Node 0 is directed to Node 4 with weight 8.
+Node 0 is directed to Node 6 with weight -1.
+Node 1 is directed to Node 4 with weight 7.
+Node 1 is directed to Node 3 with weight -2.
+Node 1 is directed to Node 0 with weight 7.
+Node 2 is directed to Node 4 with weight 0.
+Node 3 is directed to Node 1 with weight 4.
+Node 4 is directed to Node 7 with weight 8.
+Node 4 is directed to Node 0 with weight 4.
+Node 4 is directed to Node 5 with weight 1.
+Node 6 is directed to Node 3 with weight 6.
+Node 6 is directed to Node 2 with weight 2.
+Node 6 is directed to Node 4 with weight 2.
+Node 6 is directed to Node 5 with weight -1.
+Node 6 is directed to Node 1 with weight 4.
+Node 7 is directed to Node 1 with weight 2.
+Node 7 is directed to Node 2 with weight 1.
+ Does a path exist from node 5 to node 7? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 5 to node 7 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 5 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (8 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- No update in a round, stop early.
+
+By examining the graph, we notice that the graph does not show any connection between node 5 and node 7. Therefore, based on the graph's connections, the answer is 'No path.'
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11.
+Node 0 is directed to Node 6 with weight -1.
+Node 0 is directed to Node 5 with weight 2.
+Node 0 is directed to Node 7 with weight 8.
+Node 0 is directed to Node 4 with weight 9.
+Node 0 is directed to Node 3 with weight 2.
+Node 0 is directed to Node 8 with weight 1.
+Node 1 is directed to Node 4 with weight 6.
+Node 1 is directed to Node 0 with weight -1.
+Node 1 is directed to Node 5 with weight 7.
+Node 1 is directed to Node 8 with weight 9.
+Node 2 is directed to Node 1 with weight 5.
+Node 2 is directed to Node 3 with weight 0.
+Node 2 is directed to Node 9 with weight -1.
+Node 2 is directed to Node 0 with weight 7.
+Node 2 is directed to Node 6 with weight 5.
+Node 3 is directed to Node 2 with weight 0.
+Node 3 is directed to Node 8 with weight 4.
+Node 4 is directed to Node 8 with weight 0.
+Node 4 is directed to Node 6 with weight 2.
+Node 4 is directed to Node 5 with weight 0.
+Node 4 is directed to Node 1 with weight 7.
+Node 4 is directed to Node 3 with weight 7.
+Node 4 is directed to Node 0 with weight 2.
+Node 5 is directed to Node 9 with weight 5.
+Node 5 is directed to Node 8 with weight 6.
+Node 5 is directed to Node 0 with weight 9.
+Node 5 is directed to Node 3 with weight 3.
+Node 6 is directed to Node 10 with weight 5.
+Node 6 is directed to Node 9 with weight 0.
+Node 6 is directed to Node 1 with weight 9.
+Node 6 is directed to Node 8 with weight 3.
+Node 6 is directed to Node 11 with weight 3.
+Node 6 is directed to Node 4 with weight 7.
+Node 7 is directed to Node 6 with weight 0.
+Node 7 is directed to Node 0 with weight 4.
+Node 7 is directed to Node 1 with weight 0.
+Node 7 is directed to Node 8 with weight 4.
+Node 7 is directed to Node 4 with weight 8.
+Node 7 is directed to Node 9 with weight -3.
+Node 8 is directed to Node 10 with weight 6.
+Node 8 is directed to Node 6 with weight 9.
+Node 8 is directed to Node 2 with weight 4.
+Node 8 is directed to Node 5 with weight 2.
+Node 8 is directed to Node 4 with weight 2.
+Node 9 is directed to Node 2 with weight 5.
+Node 9 is directed to Node 8 with weight 6.
+Node 10 is directed to Node 0 with weight 4.
+Node 10 is directed to Node 4 with weight -3.
+Node 10 is directed to Node 9 with weight 4.
+Node 11 is directed to Node 3 with weight 3.
+Node 11 is directed to Node 8 with weight 3.
+Node 11 is directed to Node 4 with weight 7.
+Node 11 is directed to Node 1 with weight -1.
+Node 11 is directed to Node 10 with weight 5.
+Node 11 is directed to Node 6 with weight 1.
+Node 11 is directed to Node 9 with weight 5.
+Node 11 is directed to Node 2 with weight 2.
+ Does a path exist from node 3 to node 2? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 3 to node 2 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 3 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (12 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 2 via 3: 0 + 0 = 0
+- Update distance to 8 via 3: 0 + 4 = 4
+- Update distance to 10 via 8: 4 + 6 = 10
+- Update distance to 6 via 8: 4 + 9 = 13
+- Update distance to 5 via 8: 4 + 2 = 6
+- Update distance to 4 via 8: 4 + 2 = 6
+- Update distance to 0 via 10: 10 + 4 = 14
+- Update distance to 9 via 10: 10 + 4 = 14
+
+Iteration 2:
+- Update distance to 7 via 0: 14 + 8 = 22
+- Update distance to 1 via 2: 0 + 5 = 5
+- Update distance to 9 via 2: 0 + -1 = -1
+- Update distance to 0 via 2: 0 + 7 = 7
+- Update distance to 6 via 2: 0 + 5 = 5
+- Update distance to 11 via 6: 5 + 3 = 8
+
+Iteration 3:
+- Update distance to 7 via 0: 7 + 8 = 15
+- Update distance to 0 via 1: 5 + -1 = 4
+
+Iteration 4:
+- Update distance to 6 via 0: 4 + -1 = 3
+- Update distance to 7 via 0: 4 + 8 = 12
+- Update distance to 10 via 6: 3 + 5 = 8
+- Update distance to 11 via 6: 3 + 3 = 6
+- Update distance to 4 via 10: 8 + -3 = 5
+
+Iteration 5:
+- Update distance to 5 via 4: 5 + 0 = 5
+
+Iteration 6:
+- No update in a round, stop early.
+
+Therefore, there is a path from node 3 to node 2, and the shortest path is Node 3 -> Node 2.
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, and 5.
+Node 0 is directed to Node 4 with weight 6.
+Node 0 is directed to Node 2 with weight 6.
+Node 1 is directed to Node 3 with weight 6.
+Node 1 is directed to Node 5 with weight 3.
+Node 1 is directed to Node 0 with weight -1.
+Node 2 is directed to Node 1 with weight -3.
+Node 3 is directed to Node 2 with weight 5.
+Node 4 is directed to Node 0 with weight -2.
+Node 4 is directed to Node 1 with weight 3.
+Node 5 is directed to Node 3 with weight 7.
+ Does a path exist from node 5 to node 4? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 5 to node 4 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 5 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (6 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 3 via 5: 0 + 7 = 7
+
+Iteration 2:
+- Update distance to 2 via 3: 7 + 5 = 12
+
+Iteration 3:
+- Update distance to 1 via 2: 12 + -3 = 9
+
+Iteration 4:
+- Update distance to 0 via 1: 9 + -1 = 8
+
+Iteration 5:
+- Update distance to 4 via 0: 8 + 6 = 14
+
+3. Check for Negative Weight Cycles:
+- No update in a round, no negative weight cycle.
+
+Therefore, there is a path from node 5 to node 4, and the shortest path is Node 5 -> Node 3 -> Node 2 -> Node 1 -> Node 0 -> Node 4.
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+Node 0 is directed to Node 1 with weight 2.
+Node 1 is directed to Node 2 with weight 4.
+Node 2 is directed to Node 3 with weight 1.
+Node 3 is directed to Node 4 with weight -3.
+Node 3 is directed to Node 9 with weight 2.
+Node 4 is directed to Node 5 with weight 3.
+Node 5 is directed to Node 6 with weight 6.
+Node 6 is directed to Node 7 with weight 0.
+Node 7 is directed to Node 8 with weight 0.
+Node 7 is directed to Node 3 with weight 4.
+Node 8 is directed to Node 9 with weight 3.
+ Does a path exist from node 7 to node 6? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 7 to node 6 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 7 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (10 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 8 via 7: 0 + 0 = 0
+- Update distance to 3 via 7: 0 + 4 = 4
+- Update distance to 9 via 8: 0 + 3 = 3
+
+Iteration 2:
+- Update distance to 4 via 3: 4 + -3 = 1
+- Update distance to 5 via 4: 1 + 3 = 4
+- Update distance to 6 via 5: 4 + 6 = 10
+
+Iteration 3:
+- No update in a round, stop early.
+
+Therefore, there is a path from node 7 to node 6, and the shortest path is Node 7 -> Node 3 -> Node 4 -> Node 5 -> Node 6.
+
+Q: Given a directed graph: G describes a directed graph among node 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.
+Node 0 is directed to Node 2 with weight -2.
+Node 0 is directed to Node 4 with weight 3.
+Node 0 is directed to Node 3 with weight -1.
+Node 0 is directed to Node 6 with weight -1.
+Node 1 is directed to Node 7 with weight 7.
+Node 1 is directed to Node 8 with weight 5.
+Node 1 is directed to Node 3 with weight 5.
+Node 1 is directed to Node 4 with weight 0.
+Node 2 is directed to Node 9 with weight 2.
+Node 2 is directed to Node 4 with weight 6.
+Node 2 is directed to Node 6 with weight -3.
+Node 2 is directed to Node 1 with weight 3.
+Node 2 is directed to Node 0 with weight 7.
+Node 2 is directed to Node 5 with weight -3.
+Node 3 is directed to Node 10 with weight 2.
+Node 3 is directed to Node 9 with weight -3.
+Node 3 is directed to Node 7 with weight 5.
+Node 3 is directed to Node 4 with weight 2.
+Node 3 is directed to Node 6 with weight 2.
+Node 3 is directed to Node 0 with weight 3.
+Node 4 is directed to Node 7 with weight -2.
+Node 4 is directed to Node 2 with weight 8.
+Node 5 is directed to Node 10 with weight 8.
+Node 5 is directed to Node 8 with weight 7.
+Node 5 is directed to Node 4 with weight 6.
+Node 6 is directed to Node 2 with weight 9.
+Node 6 is directed to Node 4 with weight 0.
+Node 6 is directed to Node 9 with weight 7.
+Node 6 is directed to Node 8 with weight 5.
+Node 7 is directed to Node 10 with weight 2.
+Node 7 is directed to Node 5 with weight 4.
+Node 7 is directed to Node 6 with weight 9.
+Node 8 is directed to Node 0 with weight 5.
+Node 9 is directed to Node 5 with weight 7.
+Node 10 is directed to Node 6 with weight 0.
+Node 10 is directed to Node 0 with weight 6.
+Node 10 is directed to Node 3 with weight 8.
+Node 10 is directed to Node 1 with weight 7.
+Node 10 is directed to Node 5 with weight -2.
+ Does a path exist from node 8 to node 7? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path.". Let's think step by step using Bellman-Ford Algorithm.
+A: To determine if there is a path from node 8 to node 7 and find the shortest path if it exists, we can use the Bellman-Ford algorithm.
+The Bellman-Ford algorithm works by iteratively relaxing the edges, updating the cost to reach each vertex from the source vertex if a shorter path is found.
+Given the graph description, let's apply the Bellman-Ford algorithm step by step:
+
+1. Initialize distances:
+- Start with initializing the distance to all nodes as infinity, except for the source node (node 8 in this case), which is set to 0.
+
+2. Relaxation:
+- Update distances based on the graph's edges. We'll do this for each edge, for V-1 iterations, where V is the number of vertices (11 in this case). However, we can stop early if there are no updates in a round.
+
+Iteration 1:
+- Update distance to 0 via 8: 0 + 5 = 5
+
+Iteration 2:
+- Update distance to 2 via 0: 5 + -2 = 3
+- Update distance to 4 via 0: 5 + 3 = 8
+- Update distance to 3 via 0: 5 + -1 = 4
+- Update distance to 6 via 0: 5 + -1 = 4
+- Update distance to 9 via 2: 3 + 2 = 5
+- Update distance to 6 via 2: 3 + -3 = 0
+- Update distance to 1 via 2: 3 + 3 = 6
+- Update distance to 5 via 2: 3 + -3 = 0
+- Update distance to 10 via 3: 4 + 2 = 6
+- Update distance to 9 via 3: 4 + -3 = 1
+- Update distance to 7 via 3: 4 + 5 = 9
+- Update distance to 4 via 3: 4 + 2 = 6
+- Update distance to 7 via 4: 6 + -2 = 4
+- Update distance to 4 via 6: 0 + 0 = 0
+
+Iteration 3:
+- Update distance to 7 via 4: 0 + -2 = -2
+- Update distance to 10 via 7: -2 + 2 = 0
+- Update distance to 5 via 10: 0 + -2 = -2
+
+Iteration 4:
+- No update in a round, stop early.
+
+Therefore, there is a path from node 8 to node 7, and the shortest path is Node 8 -> Node 0 -> Node 2 -> Node 6 -> Node 4 -> Node 7.
+

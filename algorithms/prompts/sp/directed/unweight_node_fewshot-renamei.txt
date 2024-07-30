@@ -1,0 +1,113 @@
+Q: Given a directed graph: G describes a directed graph among 54591, 36748, 27498, 3898, 71288, 49202, 88156, 94213, and 73587.
+In this graph:
+Node 54591 is directed to nodes 36748.
+Node 36748 is directed to nodes 27498.
+Node 27498 is directed to nodes 3898.
+Node 3898 is directed to nodes 71288, 36748, 49202, 94213.
+Node 71288 is directed to nodes 49202.
+Node 49202 is directed to nodes 88156.
+Node 88156 is directed to nodes 94213.
+Node 94213 is directed to nodes 73587, 36748.
+ Does a path exist from node 71288 to node 3898? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 71288 -> Node 49202 -> Node 88156 -> Node 94213 -> Node 36748 -> Node 27498 -> Node 3898
+
+Q: Given a directed graph: G describes a directed graph among 5863, 67798, 581, 23194, 5479, 4282, 3089, 85125, 68493, 26218, 38362, 90227, 59055, and 99407.
+In this graph:
+Node 5863 is directed to nodes 67798.
+Node 67798 is directed to nodes 581.
+Node 581 is directed to nodes 23194.
+Node 23194 is directed to nodes 5479.
+ Does a path exist from node 68493 to node 59055? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Given a directed graph: G describes a directed graph among 94564, 97060, 35530, 81311, 25352, 27251, 23242, 32678, 24860, 5608, and 12646.
+In this graph:
+Node 94564 is directed to nodes 81311, 23242, 35530, 24860.
+Node 97060 is directed to nodes 27251, 5608, 12646, 25352.
+Node 35530 is directed to nodes 23242.
+Node 81311 is directed to nodes 24860, 32678, 94564.
+Node 25352 is directed to nodes 12646, 97060, 27251.
+Node 27251 is directed to nodes 5608, 12646, 25352.
+Node 23242 is directed to nodes 24860, 94564.
+Node 32678 is directed to nodes 23242, 24860.
+Node 24860 is directed to nodes 23242, 94564, 32678, 35530.
+Node 5608 is directed to nodes 25352, 27251, 97060.
+Node 12646 is directed to nodes 5608, 97060, 25352.
+ Does a path exist from node 27251 to node 94564? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Given a directed graph: G describes a directed graph among 17410, 28083, 90079, 8862, 1246, and 58629.
+In this graph:
+Node 17410 is directed to nodes 28083, 58629.
+Node 28083 is directed to nodes 90079, 1246.
+Node 90079 is directed to nodes 8862.
+Node 8862 is directed to nodes 1246, 58629.
+Node 1246 is directed to nodes 58629.
+Node 58629 is directed to nodes 28083.
+ Does a path exist from node 90079 to node 1246? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 90079 -> Node 8862 -> Node 1246
+
+Q: Given a directed graph: G describes a directed graph among 40637, 96077, 56126, 42346, and 71274.
+In this graph:
+Node 40637 is directed to nodes 42346, 96077, 71274.
+Node 96077 is directed to nodes 71274, 40637, 42346.
+Node 42346 is directed to nodes 40637, 56126, 96077.
+Node 71274 is directed to nodes 56126, 96077, 42346.
+ Does a path exist from node 56126 to node 96077? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: No Path.
+
+Q: Given a directed graph: G describes a directed graph among 44835, 64297, 23610, 76398, 9225, 92660, 94993, 1128, 70519, and 36035.
+In this graph:
+Node 44835 is directed to nodes 64297, 23610.
+Node 64297 is directed to nodes 23610.
+Node 23610 is directed to nodes 76398, 94993, 64297, 9225.
+Node 76398 is directed to nodes 9225, 64297.
+Node 9225 is directed to nodes 92660.
+Node 92660 is directed to nodes 94993, 23610.
+Node 94993 is directed to nodes 1128, 23610, 44835.
+Node 1128 is directed to nodes 70519, 76398.
+Node 70519 is directed to nodes 36035, 44835.
+Node 36035 is directed to nodes 70519, 1128.
+ Does a path exist from node 64297 to node 36035? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 64297 -> Node 23610 -> Node 94993 -> Node 1128 -> Node 70519 -> Node 36035
+
+Q: Given a directed graph: G describes a directed graph among 14546, 53166, 53459, 25248, 47910, 76530, 59010, 99572, 33707, 5112, 94047, 91500, and 17834.
+In this graph:
+Node 14546 is directed to nodes 53166, 53459, 99572.
+Node 53166 is directed to nodes 53459, 17834, 47910, 5112, 25248, 99572.
+Node 53459 is directed to nodes 25248, 99572, 94047, 14546, 91500, 47910.
+Node 25248 is directed to nodes 47910, 53166, 94047, 99572, 33707, 14546.
+Node 47910 is directed to nodes 76530, 14546, 25248, 99572, 53166, 59010.
+Node 76530 is directed to nodes 59010, 53166.
+Node 59010 is directed to nodes 99572, 53459, 53166, 94047, 14546.
+Node 99572 is directed to nodes 33707, 5112, 53166, 25248, 59010, 17834.
+Node 33707 is directed to nodes 5112, 91500, 76530.
+Node 5112 is directed to nodes 94047, 59010.
+Node 94047 is directed to nodes 91500, 5112, 99572, 33707.
+Node 91500 is directed to nodes 17834, 14546, 53459, 53166.
+Node 17834 is directed to nodes 53166, 33707.
+ Does a path exist from node 5112 to node 94047? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 5112 -> Node 94047
+
+Q: Given a directed graph: G describes a directed graph among 26859, 16642, 13117, 97466, 54379, 65209, and 8942.
+In this graph:
+Node 26859 is directed to nodes 16642, 54379, 65209.
+Node 16642 is directed to nodes 13117, 54379.
+Node 13117 is directed to nodes 97466, 8942.
+Node 97466 is directed to nodes 54379, 65209, 8942.
+Node 54379 is directed to nodes 65209, 13117, 97466, 26859.
+Node 65209 is directed to nodes 8942, 54379.
+Node 8942 is directed to nodes 54379, 97466.
+ Does a path exist from node 97466 to node 16642? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 97466 -> Node 54379 -> Node 26859 -> Node 16642
+
+Q: Given a directed graph: G describes a directed graph among 11229, 75889, 88711, 69875, 39807, 84331, 83540, 10710, 70054, 53600, 72621, 97493, and 97678.
+In this graph:
+Node 11229 is directed to nodes 75889.
+Node 75889 is directed to nodes 88711.
+Node 88711 is directed to nodes 69875.
+Node 69875 is directed to nodes 39807.
+Node 39807 is directed to nodes 84331.
+ Does a path exist from node 11229 to node 39807? If so, provide the shortest path formatted as "Node #1 -> Node #2." If not, state "No path."
+A: Node 11229 -> Node 75889 -> Node 88711 -> Node 69875 -> Node 39807
+
